@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KEVIN-PC</Machine>
+    <WindowsUser>mouton_k</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>01a76b23-5f7a-4f68-b08f-0fa94841c008</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>03BDD068E1ED7D8244F126C812355C2BEF06EC4A6320033B1ACDE814830C5910</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>01a76b23-5f7a-4f68-b08f-0fa94841c008_1.0.0.0_neutral__fck0gx32smjyj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>01a76b23-5f7a-4f68-b08f-0fa94841c008_fck0gx32smjyj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>01a76b23-5f7a-4f68-b08f-0fa94841c008</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=mouton_k</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-02T11:01:07.213</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.exe">
+      <PackagePath>Hack4Europe.Windows.exe</PackagePath>
+      <Modified>2015-05-02T11:01:00.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-05-02T11:00:59.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-05-02T11:00:59.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.xr.xml">
+      <PackagePath>Hack4Europe.Windows.xr.xml</PackagePath>
+      <Modified>2015-05-02T11:00:54.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\mouton_k\documents\visual studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-02T11:01:04.011</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
