@@ -4,4 +4,37 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Hack4Europe">
 
+    <Application.Resources>
+        
+        <SolidColorBrush x:Key="LightBlue">
+            <Color>#DEEBF7</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="FlashBlue">
+            <Color>#00A7E1</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="MediumBlue">
+            <Color>#9DC3E6</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="DarkGrey">
+            <Color>#3B3838</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionGold">
+            <Color>#E8B618</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionLime">
+            <Color>#22DEA4</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionLightGrey">
+            <Color>#767171</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionDarkOrange">
+            <Color>#F2550E</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionGreen">
+            <Color>#70AD47</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="ActionLightOrange">
+            <Color>#ED7D31</Color>
+        </SolidColorBrush>
+    </Application.Resources>
 </Application>

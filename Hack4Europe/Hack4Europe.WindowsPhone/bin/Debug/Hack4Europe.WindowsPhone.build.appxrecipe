@@ -7,55 +7,136 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>c30b493a-9f63-42df-a07d-bf1c806ea803</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.exe">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.exe">
       <PackagePath>Hack4Europe.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Activity Grid 2-100.png">
+      <PackagePath>CommonAssets\Icons\Activity Grid 2-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Air Conditioner-100.png">
+      <PackagePath>CommonAssets\Icons\Air Conditioner-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Electrical Sensor-100.png">
+      <PackagePath>CommonAssets\Icons\Electrical Sensor-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Electricity-100_fat.png">
+      <PackagePath>CommonAssets\Icons\Electricity-100_fat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Electricity-100_thin.png">
+      <PackagePath>CommonAssets\Icons\Electricity-100_thin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Heating Room Filled-100.png">
+      <PackagePath>CommonAssets\Icons\Heating Room Filled-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Heating Room-100.png">
+      <PackagePath>CommonAssets\Icons\Heating Room-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Idea-100.png">
+      <PackagePath>CommonAssets\Icons\Idea-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lamp-100.png">
+      <PackagePath>CommonAssets\Icons\Lamp-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lock 2-100_grey.png">
+      <PackagePath>CommonAssets\Icons\Lock 2-100_grey.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lock 2-100_white.png">
+      <PackagePath>CommonAssets\Icons\Lock 2-100_white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lock-100.png">
+      <PackagePath>CommonAssets\Icons\Lock-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Microphone-100.png">
+      <PackagePath>CommonAssets\Icons\Microphone-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Motion Detector-100.png">
+      <PackagePath>CommonAssets\Icons\Motion Detector-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\New Post-100.png">
+      <PackagePath>CommonAssets\Icons\New Post-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Overview Pages 2-100.png">
+      <PackagePath>CommonAssets\Icons\Overview Pages 2-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Plus-100.png">
+      <PackagePath>CommonAssets\Icons\Plus-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Rain-100.png">
+      <PackagePath>CommonAssets\Icons\Rain-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Settings-100.png">
+      <PackagePath>CommonAssets\Icons\Settings-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Sun-100.png">
+      <PackagePath>CommonAssets\Icons\Sun-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\System Information-100.png">
+      <PackagePath>CommonAssets\Icons\System Information-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Temperature Filled-100.png">
+      <PackagePath>CommonAssets\Icons\Temperature Filled-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Unlock-100.png">
+      <PackagePath>CommonAssets\Icons\Unlock-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Wall Socket-100.png">
+      <PackagePath>CommonAssets\Icons\Wall Socket-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Winter-100_fat.png">
+      <PackagePath>CommonAssets\Icons\Winter-100_fat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Winter-100_thin.png">
+      <PackagePath>CommonAssets\Icons\Winter-100_thin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItem.xbf">
+      <PackagePath>UserControls\DomoItem.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.xr.xml">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.xr.xml">
       <PackagePath>Hack4Europe.WindowsPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -34,3 +34,44 @@ C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csprojResolveAssemblyReference.cache
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csproj.GenerateResource.Cache
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\App.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\UserControls\DomoItem.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\MainPage.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.xr.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.exe
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.pdb
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\resources.pri
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\AppxManifest.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Hack4Europe.Windows.build.appxrecipe
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\App.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\App.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\MainPage.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\MainPage.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\DomoItem.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\DomoItem.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\MainPage.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\MainPage.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\App.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\DomoItem.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\App.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\DomoItem.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.exe
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.pdb
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csproj.GenerateResource.Cache
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\priconfig.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\priconfig.xml.intermediate
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\layout.resfiles
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\layout.resfiles.intermediate
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\resources.resfiles
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\resources.resfiles.intermediate
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\pri.resfiles
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\pri.resfiles.intermediate
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\qualifiers.txt
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\qualifiers.txt.intermediate
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csprojResolveAssemblyReference.cache

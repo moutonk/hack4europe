@@ -19,6 +19,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\DataManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\RememberConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Other\Paths.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\DomoItem.xaml.cs">
+      <DependentUpon>DomoItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Encrypt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Logs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
@@ -27,6 +30,41 @@
     <Compile Include="$(MSBuildThisFileDirectory)Ws\WebServiceEndDetector.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)CommonAssets\Logos\" />
     <Folder Include="$(MSBuildThisFileDirectory)Ressources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\DomoItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Activity Grid 2-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Air Conditioner-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electrical Sensor-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electricity-100_fat.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electricity-100_thin.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Heating Room Filled-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Heating Room-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Idea-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lamp-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock 2-100_grey.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock 2-100_white.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Microphone-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Motion Detector-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\New Post-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Overview Pages 2-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Plus-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Rain-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Settings-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Sun-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\System Information-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Temperature Filled-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Unlock-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Wall Socket-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_fat.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_thin.png" />
   </ItemGroup>
 </Project>

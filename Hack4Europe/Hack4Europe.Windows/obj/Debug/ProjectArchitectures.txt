@@ -1,1 +1,1 @@
-C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Hack4Europe.Windows.csproj;neutral
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\Hack4Europe.Windows.csproj;neutral
