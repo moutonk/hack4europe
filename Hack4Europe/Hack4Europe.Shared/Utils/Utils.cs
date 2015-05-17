@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Data;
+using Hack4Europe.UserControls;
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.Utils
@@ -60,6 +63,38 @@ namespace Hack4Europe.Utils
         {
             var origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
             return timestamp == null ? origin : origin.AddMilliseconds((double)timestamp);
+        }
+    }
+
+    public class DomoItemVisibilityConverters : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (targetType != typeof(Visibility))
+                throw new InvalidOperationException("The target must be a DomoItemType");
+
+            switch ((DomoItemControl.DomoItemType)value)
+            {
+                case DomoItemControl.DomoItemType.Temperature:
+                    return Visibility.Visible;
+
+                case DomoItemControl.DomoItemType.Cooling:
+                    return Visibility.Visible;
+
+                case DomoItemControl.DomoItemType.Heating:
+                    return Visibility.Visible;
+
+                case DomoItemControl.DomoItemType.Safety:
+                    return Visibility.Collapsed;
+                
+                default:
+                    return Visibility.Visible;
+            }
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -34,3 +34,4 @@ C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csprojResolveAssemblyReference.cache
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csproj.GenerateResource.Cache
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\Hack4Europe.Windows.csprojResolveAssemblyReference.cache

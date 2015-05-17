@@ -381,7 +381,7 @@
         <Grid Grid.Column="1" Background="WhiteSmoke">
             <StackPanel Orientation="Vertical" Margin="10">
                 <TextBlock Name="DescriptionTextBlock" FontSize="15" Foreground="{StaticResource ActionLightGrey}" Text="{Binding TextDescription, Mode=TwoWay}" TextWrapping="Wrap"></TextBlock>
-                <Grid VerticalAlignment="Center">
+                <Grid VerticalAlignment="Center" Name="SliderGrid" Visibility="{Binding Type, Converter={StaticResource DomoItemVisibilityConverters}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="40"></ColumnDefinition>

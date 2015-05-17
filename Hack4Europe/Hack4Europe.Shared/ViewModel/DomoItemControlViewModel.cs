@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using Hack4Europe.Data;
+using Hack4Europe.UserControls;
 
 namespace Hack4Europe.ViewModel
 {
@@ -46,6 +47,19 @@ namespace Hack4Europe.ViewModel
             }
         }
 
+        private DomoItemControl.DomoItemType _type;
+        public DomoItemControl.DomoItemType Type
+        {
+            get
+            {
+                return _type;
+            }
+            set
+            {
+                NotifyPropertyChanged(ref _type, value);
+            }
+        }
+        
         public bool IsActive { get; set; }
 
         public void IconOnTapped()
@@ -67,6 +81,7 @@ namespace Hack4Europe.ViewModel
                 
             }
         }
+
     }
 
     public class IconInfoViewModel : ViewModelBase

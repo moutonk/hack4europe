@@ -15,7 +15,8 @@ namespace Hack4Europe.UserControls
         {
             Temperature,
             Heating,
-            Cooling
+            Cooling,
+            Safety
         }
 
         public DomoItemType Type
@@ -35,17 +36,24 @@ namespace Hack4Europe.UserControls
 
         private void DomoItem_OnLoaded(object sender, RoutedEventArgs e)
         {
-            switch (Type)
-            {
-                case DomoItemType.Temperature:
-                    break;
+            //switch (Type)
+            //{
+            //    case DomoItemType.Temperature:
+            //        SliderGrid.Visibility = Visibility.Visible;
+            //        break;
 
-                case DomoItemType.Cooling:
-                    break;
+            //    case DomoItemType.Cooling:
+            //        SliderGrid.Visibility = Visibility.Visible;
+            //        break;
 
-                case DomoItemType.Heating:
-                    break;
-            }
+            //    case DomoItemType.Heating:
+            //        SliderGrid.Visibility = Visibility.Visible;
+            //        break;
+
+            //    case DomoItemType.Safety:
+            //        SliderGrid.Visibility = Visibility.Collapsed;
+            //        break;
+            //}
         }
 
         private void Icon_OnTapped(object sender, TappedRoutedEventArgs e)

@@ -124,29 +124,31 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[10];
-            _typeNameTable[0] = "Windows.UI.Color";
-            _typeNameTable[1] = "System.ValueType";
-            _typeNameTable[2] = "Object";
-            _typeNameTable[3] = "Byte";
-            _typeNameTable[4] = "Hack4Europe.UserControls.DomoItemControl";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[6] = "Hack4Europe.UserControls.DomoItemControl.DomoItemType";
-            _typeNameTable[7] = "System.Enum";
-            _typeNameTable[8] = "Hack4Europe.MainPage";
-            _typeNameTable[9] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable = new string[11];
+            _typeNameTable[0] = "Hack4Europe.Utils.DomoItemVisibilityConverters";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "Windows.UI.Color";
+            _typeNameTable[3] = "System.ValueType";
+            _typeNameTable[4] = "Byte";
+            _typeNameTable[5] = "Hack4Europe.UserControls.DomoItemControl";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "Hack4Europe.UserControls.DomoItemControl.DomoItemType";
+            _typeNameTable[8] = "System.Enum";
+            _typeNameTable[9] = "Hack4Europe.MainPage";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
 
-            _typeTable = new global::System.Type[10];
-            _typeTable[0] = typeof(global::Windows.UI.Color);
-            _typeTable[1] = typeof(global::System.ValueType);
-            _typeTable[2] = typeof(global::System.Object);
-            _typeTable[3] = typeof(global::System.Byte);
-            _typeTable[4] = typeof(global::Hack4Europe.UserControls.DomoItemControl);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[6] = typeof(global::Hack4Europe.UserControls.DomoItemControl.DomoItemType);
-            _typeTable[7] = typeof(global::System.Enum);
-            _typeTable[8] = typeof(global::Hack4Europe.MainPage);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable = new global::System.Type[11];
+            _typeTable[0] = typeof(global::Hack4Europe.Utils.DomoItemVisibilityConverters);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::Windows.UI.Color);
+            _typeTable[3] = typeof(global::System.ValueType);
+            _typeTable[4] = typeof(global::System.Byte);
+            _typeTable[5] = typeof(global::Hack4Europe.UserControls.DomoItemControl);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::Hack4Europe.UserControls.DomoItemControl.DomoItemType);
+            _typeTable[8] = typeof(global::System.Enum);
+            _typeTable[9] = typeof(global::Hack4Europe.MainPage);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,8 +183,9 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_4_DomoItemControl() { return new global::Hack4Europe.UserControls.DomoItemControl(); }
-        private object Activate_8_MainPage() { return new global::Hack4Europe.MainPage(); }
+        private object Activate_0_DomoItemVisibilityConverters() { return new global::Hack4Europe.Utils.DomoItemVisibilityConverters(); }
+        private object Activate_5_DomoItemControl() { return new global::Hack4Europe.UserControls.DomoItemControl(); }
+        private object Activate_9_MainPage() { return new global::Hack4Europe.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -194,7 +197,18 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Windows.UI.Color
+            case 0:   //  Hack4Europe.Utils.DomoItemVisibilityConverters
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_DomoItemVisibilityConverters;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Object
+                xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Windows.UI.Color
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -203,55 +217,52 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 1:   //  System.ValueType
+            case 3:   //  System.ValueType
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 2:   //  Object
-                xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  Byte
+            case 4:   //  Byte
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Hack4Europe.UserControls.DomoItemControl
+            case 5:   //  Hack4Europe.UserControls.DomoItemControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_4_DomoItemControl;
+                userType.Activator = Activate_5_DomoItemControl;
                 userType.AddMemberName("Type");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.UserControl
+            case 6:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Hack4Europe.UserControls.DomoItemControl.DomoItemType
+            case 7:   //  Hack4Europe.UserControls.DomoItemControl.DomoItemType
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Temperature", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Temperature);
                 userType.AddEnumValue("Heating", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Heating);
                 userType.AddEnumValue("Cooling", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Cooling);
+                userType.AddEnumValue("Safety", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Safety);
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  System.Enum
+            case 8:   //  System.Enum
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 8:   //  Hack4Europe.MainPage
+            case 9:   //  Hack4Europe.MainPage
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Windows.UI.Xaml.Controls.Page
+            case 10:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
