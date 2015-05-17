@@ -22,6 +22,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\DomoItemControl.xaml.cs">
       <DependentUpon>DomoItemControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml.cs">
+      <DependentUpon>MainViewGridControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Encrypt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Logs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
@@ -33,10 +36,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)CommonAssets\Logos\" />
+    <Folder Include="$(MSBuildThisFileDirectory)View\" />
     <Folder Include="$(MSBuildThisFileDirectory)Ressources\" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)UserControls\DomoItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

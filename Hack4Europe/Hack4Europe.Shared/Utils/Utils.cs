@@ -71,7 +71,7 @@ namespace Hack4Europe.Utils
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (targetType != typeof(Visibility))
-                throw new InvalidOperationException("The target must be a DomoItemType");
+                throw new InvalidOperationException("The target must be a Visibility");
 
             switch ((DomoItemControl.DomoItemType)value)
             {
