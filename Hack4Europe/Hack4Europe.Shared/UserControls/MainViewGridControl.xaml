@@ -19,9 +19,9 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Image Name="TopImageUrImage" Grid.Column="0" Source="{Binding TopIconLogoUri}" Margin="15" ></Image>
+            <Image Name="TopImageUrImage" Grid.Column="0" Source="{Binding TopIconLogoUri}" VerticalAlignment="Center" Margin="15" ></Image>
             <TextBlock Name="TopTitleTextBlock" Grid.Column="1" Text="{Binding TopTitle}" Foreground="White" VerticalAlignment="Center" Margin="10" FontSize="25"></TextBlock>
-            <Image Grid.Column="1" Margin="10" VerticalAlignment="Center" Source="{Binding TopImageUri}"></Image>
+            <Image Grid.Column="1" Margin="5,23,20,17" VerticalAlignment="Center" HorizontalAlignment="Left" Source="{Binding TopImageUri}"></Image>
         </Grid>
         <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource FlashBlue}"/>
         <Grid Grid.Row="2" Grid.Column="0" Background="{StaticResource LightBlue}">

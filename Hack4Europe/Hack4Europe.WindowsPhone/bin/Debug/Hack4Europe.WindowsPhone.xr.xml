@@ -196,6 +196,7 @@
       <RootProperty Name="Stretch" />
       <RootProperty Name="Source" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
@@ -204,9 +205,9 @@
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Hack4Europe.UserControls.MainViewGridControl">
-      <RootProperty Name="TopTitle" />
       <RootProperty Name="TopIconLogoUri" />
       <RootProperty Name="TopImageUri" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.FirstPageView" />
