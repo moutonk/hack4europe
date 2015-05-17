@@ -6,6 +6,7 @@ CommonAssets\Icons\Electricity-100_thin.png
 CommonAssets\Icons\Heating Room Filled-100.png
 CommonAssets\Icons\Heating Room-100.png
 CommonAssets\Icons\Idea-100.png
+CommonAssets\Icons\IdeaOn-100.png
 CommonAssets\Icons\Lamp-100.png
 CommonAssets\Icons\Lock 2-100_grey.png
 CommonAssets\Icons\Lock 2-100_white.png
@@ -33,4 +34,4 @@ Assets\WideLogo.scale-240.png
 App.xbf
 Hack4Europe.WindowsPhone.xr.xml
 MainPage.xbf
-UserControls\DomoItem.xbf
+UserControls\DomoItemControl.xbf

@@ -35,7 +35,7 @@ C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\Hack4Europe.WindowsPhone.csprojResolveAssemblyReference.cache
 C:\Users\mouton_k\Documents\Visual Studio 2013\Projects\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\Hack4Europe.WindowsPhone.csproj.GenerateResource.Cache
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\App.xbf
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItem.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItemControl.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\MainPage.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.xr.xml
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\Hack4Europe.WindowsPhone.exe
@@ -49,16 +49,16 @@ C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPh
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\App.g.cs
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.g.i.cs
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.g.cs
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItem.g.i.cs
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItem.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItemControl.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItemControl.g.cs
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.xaml
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.xbf
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\App.xaml
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItem.xaml
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\App.xbf
-C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItem.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItemControl.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\MainPage.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\DomoItemControl.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\Hack4Europe.WindowsPhone.exe
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\Hack4Europe.WindowsPhone.pdb
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\Hack4Europe.WindowsPhone.csproj.GenerateResource.Cache

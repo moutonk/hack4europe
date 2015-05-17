@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Idea-100.png">
       <PackagePath>CommonAssets\Icons\Idea-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\IdeaOn-100.png">
+      <PackagePath>CommonAssets\Icons\IdeaOn-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lamp-100.png">
       <PackagePath>CommonAssets\Icons\Lamp-100.png</PackagePath>
     </AppxPackagedFile>
@@ -127,8 +130,8 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItem.xbf">
-      <PackagePath>UserControls\DomoItem.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItemControl.xbf">
+      <PackagePath>UserControls\DomoItemControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

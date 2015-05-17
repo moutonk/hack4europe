@@ -9,6 +9,12 @@
     Background="{StaticResource LightBlue}">
 
     <Grid >
-        <userControls:DomoItem Type="1"></userControls:DomoItem>
+        <ListBox Name="TotoListBox">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <userControls:DomoItemControl/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Page>

@@ -1,23 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // Pour en savoir plus sur le modèle d'élément Contrôle utilisateur, consultez la page http://go.microsoft.com/fwlink/?LinkId=234236
+using Windows.UI.Xaml.Input;
+using Hack4Europe.Data;
+using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.UserControls
 {
-    public sealed partial class DomoItem : UserControl
+    public sealed partial class DomoItemControl : UserControl
     {
         public enum DomoItemType
         {
@@ -33,11 +25,12 @@ namespace Hack4Europe.UserControls
         }
         
         public static readonly DependencyProperty TypeProperty = DependencyProperty.Register(
-        "Type", typeof(DomoItemType), typeof(DomoItem), new PropertyMetadata(DomoItemType.Temperature));
+        "Type", typeof(DomoItemType), typeof(DomoItemControl), new PropertyMetadata(DomoItemType.Temperature));
 
-        public DomoItem() : base()
+        public DomoItemControl()
         {
             this.InitializeComponent();
+            //this.DataContext = new DomoItemControlViewModel();
         }
 
         private void DomoItem_OnLoaded(object sender, RoutedEventArgs e)
@@ -53,6 +46,11 @@ namespace Hack4Europe.UserControls
                 case DomoItemType.Heating:
                     break;
             }
+        }
+
+        private void Icon_OnTapped(object sender, TappedRoutedEventArgs e)
+        {
+            (this.DataContext as DomoItemControlViewModel).IconOnTapped();  
         }
     }
 }

@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text.RegularExpressions;
+using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.Utils
 {
