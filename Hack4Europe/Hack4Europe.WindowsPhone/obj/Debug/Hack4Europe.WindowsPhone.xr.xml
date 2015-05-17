@@ -10,6 +10,9 @@
     <RootPropertyPathName Name="TextDescription" />
     <RootPropertyPathName Name="Icon" />
     <RootPropertyPathName Name="Uri" />
+    <RootPropertyPathName Name="TopImageUri" />
+    <RootPropertyPathName Name="TopTitle" />
+    <RootPropertyPathName Name="TopIconLogoUri" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -23,6 +26,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -191,7 +195,24 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="Source" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Tapped" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
+      <RootProperty Name="Points" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Hack4Europe.UserControls.MainViewGridControl">
+      <RootProperty Name="TopTitle" />
+      <RootProperty Name="TopIconLogoUri" />
+      <RootProperty Name="TopImageUri" />
+    </RootType>
+    <RootType FullName="Hack4Europe.View.ActionsView" />
+    <RootType FullName="Hack4Europe.View.FirstPageView" />
+    <RootType FullName="Hack4Europe.View.HomeView" />
+    <RootType FullName="Hack4Europe.View.ScenariosView" />
+    <RootType FullName="Hack4Europe.View.SettingsView" />
+    <RootType FullName="Hack4Europe.View.SignInView" />
   </Roots.RootTypes>
 </Roots>

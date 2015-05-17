@@ -25,6 +25,9 @@ CommonAssets\Icons\Unlock-100.png
 CommonAssets\Icons\Wall Socket-100.png
 CommonAssets\Icons\Winter-100_fat.png
 CommonAssets\Icons\Winter-100_thin.png
+CommonAssets\Logos\logo.png
+CommonAssets\Logos\LOGO_sugar_mole.png
+CommonAssets\Logos\sugar_mole.png
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -35,3 +38,10 @@ App.xbf
 Hack4Europe.WindowsPhone.xr.xml
 MainPage.xbf
 UserControls\DomoItemControl.xbf
+UserControls\MainViewGridControl.xbf
+View\ActionsView.xbf
+View\FirstPageView.xbf
+View\HomeView.xbf
+View\ScenariosView.xbf
+View\SettingsView.xbf
+View\SignInView.xbf

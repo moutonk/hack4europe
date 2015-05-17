@@ -1,9 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Type" />
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="ValueSlider" />
+    <RootPropertyPathName Name="TextDescription" />
+    <RootPropertyPathName Name="Icon" />
+    <RootPropertyPathName Name="Uri" />
+    <RootPropertyPathName Name="TopImageUri" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="Hack4Europe.Utils.DomoItemVisibilityConverters" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
@@ -19,6 +32,8 @@
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -31,10 +46,10 @@
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Hack4Europe.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Name" />
@@ -147,7 +162,6 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />
@@ -156,11 +170,33 @@
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Source" />
+      <RootEvent Name="Tapped" />
     </RootType>
-    <RootType FullName="Hack4Europe.UserControls.DomoItem" />
+    <RootType FullName="Hack4Europe.UserControls.DomoItemControl" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
+      <RootProperty Name="Points" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Hack4Europe.UserControls.MainViewGridControl" />
+    <RootType FullName="Hack4Europe.View.ActionsView" />
+    <RootType FullName="Hack4Europe.View.FirstPageView" />
+    <RootType FullName="Hack4Europe.View.HomeView" />
+    <RootType FullName="Hack4Europe.View.ScenariosView" />
+    <RootType FullName="Hack4Europe.View.SettingsView" />
+    <RootType FullName="Hack4Europe.View.SignInView" />
   </Roots.RootTypes>
 </Roots>

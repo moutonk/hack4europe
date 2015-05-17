@@ -6,7 +6,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:userControls="using:Hack4Europe.UserControls"
     mc:Ignorable="d"
-    Background="{StaticResource LightBlue}">
+    Background="{StaticResource LightBlue}"
+    Loaded="MainPage_OnLoaded">
 
     <Grid >
         <ListBox Name="TotoListBox">

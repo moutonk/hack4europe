@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Navigation;
 // Pour en savoir plus sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=234238
 using Hack4Europe.Data;
 using Hack4Europe.UserControls;
+using Hack4Europe.View;
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe
@@ -56,6 +57,11 @@ namespace Hack4Europe
             // Événement Windows.Phone.UI.Input.HardwareButtons.BackPressed.
             // Si vous utilisez le NavigationHelper fourni par certains modèles,
             // cet événement est géré automatiquement.
+        }
+
+        private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (HomeView));
         }
     }
 }
