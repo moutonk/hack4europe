@@ -1,20 +1,12 @@
-﻿using System;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Imaging;
-
-// Pour en savoir plus sur le modèle d'élément Contrôle utilisateur, consultez la page http://go.microsoft.com/fwlink/?LinkId=234236
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.UserControls
 {
     public sealed partial class MainViewGridControl : UserControl
     {
-        public MainViewGridControl()
-        {
-            this.InitializeComponent();
-            this.DataContext = new MainViewGridViewModel();
-        }
+        #region DependancyProperties
 
         public string TopImageUri
         {
@@ -42,6 +34,25 @@ namespace Hack4Europe.UserControls
 
         public static readonly DependencyProperty TopIconUriProperty = DependencyProperty.Register(
         "TopIconLogoUri", typeof(string), typeof(MainViewGridControl), new PropertyMetadata(string.Empty));
+
+        public UIElementCollection Children
+        {
+            get { return (UIElementCollection)GetValue(ChildrenProperty); }
+            set { SetValue(ChildrenProperty, value); }
+        }
+
+        public static readonly DependencyProperty ChildrenProperty = DependencyProperty.Register(
+        "Children", typeof(UIElementCollection), typeof(MainViewGridControl), null);
+
+        #endregion
+
+        public MainViewGridControl()
+        {
+            this.InitializeComponent();
+            //this.DataContext = new MainViewGridViewModel();
+
+            Children = ContentStackPanel.Children;
+        }
 
         private void MainViewGridControl_OnLoaded(object sender, RoutedEventArgs e)
         {

@@ -4,10 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:Hack4Europe.ViewModel"
     mc:Ignorable="d"
     Loaded="MainViewGridControl_OnLoaded">
-    
+
+    <UserControl.DataContext>
+        <local:MainViewGridViewModel></local:MainViewGridViewModel>
+    </UserControl.DataContext>
+
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -31,6 +37,6 @@
             </Grid.ColumnDefinitions>
             <Polygon Points="10,10 0,0, 20,0" Fill="{StaticResource FlashBlue}" HorizontalAlignment="Center"/>
         </Grid>
-        <Grid Grid.Row="3" Name="ContentGrid" Background="{StaticResource LightBlue}"/>
+        <StackPanel Grid.Row="3" Name="ContentStackPanel" Background="{StaticResource LightBlue}"/>
     </Grid>
 </UserControl>

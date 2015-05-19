@@ -25,8 +25,8 @@ namespace Hack4Europe.UserControls
 
         public DomoItemControl()
         {
-            this.InitializeComponent();
-            //this.DataContext = new DomoItemControlViewModel();
+            InitializeComponent();
+            //DataContext = new DomoItemControlViewModel();
         }
 
         private void Icon_OnTapped(object sender, TappedRoutedEventArgs e)

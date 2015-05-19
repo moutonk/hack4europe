@@ -13,6 +13,7 @@
     <RootPropertyPathName Name="TopImageUri" />
     <RootPropertyPathName Name="TopTitle" />
     <RootPropertyPathName Name="TopIconLogoUri" />
+    <RootPropertyPathName Name="DomoItemsList" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -30,10 +31,10 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Visibility" />
@@ -48,19 +49,12 @@
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
-      <RootProperty Name="Name" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Hack4Europe.UserControls.DomoItemControl" />
     <RootType FullName="Hack4Europe.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Width" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
@@ -174,6 +168,8 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />
@@ -199,6 +195,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Tapped" />
     </RootType>
+    <RootType FullName="Hack4Europe.UserControls.DomoItemControl" />
+    <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
       <RootProperty Name="Points" />
       <RootProperty Name="Fill" />
@@ -207,10 +205,19 @@
     <RootType FullName="Hack4Europe.UserControls.MainViewGridControl">
       <RootProperty Name="TopIconLogoUri" />
       <RootProperty Name="TopImageUri" />
-      <RootProperty Name="Content" />
+      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.FirstPageView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Hack4Europe.ViewModel.HomeViewModel" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
     <RootType FullName="Hack4Europe.View.HomeView" />
     <RootType FullName="Hack4Europe.View.ScenariosView" />
     <RootType FullName="Hack4Europe.View.SettingsView" />
