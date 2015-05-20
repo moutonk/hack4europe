@@ -13,7 +13,6 @@
     </UserControl.DataContext>
 
     <Grid>
-        
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -37,6 +36,9 @@
             </Grid.ColumnDefinitions>
             <Polygon Points="10,10 0,0, 20,0" Fill="{StaticResource FlashBlue}" HorizontalAlignment="Center"/>
         </Grid>
-        <StackPanel Grid.Row="3" Name="ContentStackPanel" Background="{StaticResource LightBlue}"/>
+        <Grid Grid.Row="3" Background="{StaticResource LightBlue}"/>
+        <ScrollViewer Grid.Row="3" >
+            <StackPanel Margin="10" Name="ContentStackPanel"/>
+        </ScrollViewer>
     </Grid>
 </UserControl>

@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Width="400"
-    >
+    Margin="0,0,0,10">
     
     <UserControl.Resources>
         <Style TargetType="Slider">
@@ -379,15 +379,15 @@
             <Image Name="Icon" Margin="10" Stretch="Uniform" Source="{Binding Icon.Uri, Mode=TwoWay}" Tapped="Icon_OnTapped"></Image>
         </Grid>
         <Grid Grid.Column="1" Background="WhiteSmoke">
-            <StackPanel Orientation="Vertical" Margin="10">
-                <TextBlock Name="DescriptionTextBlock" FontSize="15" Foreground="{StaticResource ActionLightGrey}" Text="{Binding TextDescription, Mode=TwoWay}" TextWrapping="Wrap"></TextBlock>
+            <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+                <TextBlock Name="DescriptionTextBlock" Margin="0,0,10,0" FontSize="15" Foreground="{StaticResource ActionLightGrey}" Text="{Binding TextDescription, Mode=TwoWay}" TextWrapping="Wrap"></TextBlock>
                 <Grid VerticalAlignment="Center" Name="SliderGrid" Visibility="{Binding Type, Converter={StaticResource DomoItemVisibilityConverters}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="40"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Slider Grid.Column="0" Name="ValueSlider" Height="40" Margin="0,-5,10,0" Orientation="Horizontal" Value="{Binding ValueSlider, Mode=TwoWay}" Minimum="0" Maximum="100" SmallChange="1" LargeChange="10" TickPlacement="None" TickFrequency="10"/>
-                    <TextBlock Grid.Column="1" Margin="0,0,10,0" FontSize="15" Text="{Binding Value, ElementName=ValueSlider, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{StaticResource ActionLightGrey}"></TextBlock>
+                    <Slider Grid.Column="0" Name="ValueSlider" Height="40" Margin="0,-5,10,-10" Orientation="Horizontal" Value="{Binding ValueSlider, Mode=TwoWay}" Minimum="0" Maximum="100" SmallChange="1" LargeChange="10" TickPlacement="None" TickFrequency="10"/>
+                    <TextBlock Grid.Column="1" Margin="0,8,20,0" FontSize="15" Text="{Binding Value, ElementName=ValueSlider, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{StaticResource ActionLightGrey}"></TextBlock>
                 </Grid>
             </StackPanel>
         </Grid>

@@ -52,6 +52,7 @@
     <RootType FullName="Hack4Europe.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
@@ -169,15 +170,15 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="Name" />
-      <RootProperty Name="Background" />
+      <RootProperty Name="DataContext" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -193,10 +194,14 @@
       <RootProperty Name="Source" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Hack4Europe.UserControls.DomoItemControl" />
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
       <RootProperty Name="Points" />
       <RootProperty Name="Fill" />
@@ -209,12 +214,11 @@
     </RootType>
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.FirstPageView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+    <RootType FullName="Hack4Europe.ViewModel.HomeViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="DataContext" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Hack4Europe.ViewModel.HomeViewModel" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>

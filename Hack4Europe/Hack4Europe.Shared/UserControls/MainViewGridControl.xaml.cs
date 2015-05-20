@@ -49,8 +49,6 @@ namespace Hack4Europe.UserControls
         public MainViewGridControl()
         {
             this.InitializeComponent();
-            //this.DataContext = new MainViewGridViewModel();
-
             Children = ContentStackPanel.Children;
         }
 
