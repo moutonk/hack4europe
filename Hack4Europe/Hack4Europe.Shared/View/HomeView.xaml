@@ -10,20 +10,28 @@
 
     <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Logos/logo.png" TopImageUri="/CommonAssets/Logos/sugar_mole.png">
        <userControls:MainViewGridControl.Children>
-           <StackPanel>
-                <StackPanel.DataContext>
-                    <local:HomeViewModel></local:HomeViewModel>
-                </StackPanel.DataContext>
-               <Image Source="/CommonAssets/Icons/Plus-100.png" Height="50" Margin="0,0,0,20"></Image>
-                <ItemsControl ItemsSource="{Binding DomoItemsList, Mode=TwoWay}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <userControls:DomoItemControl/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-           </StackPanel>
-            <!--<ListBox ItemsSource="{Binding DomoItemsList, Mode=TwoWay}">
+           <Grid>
+               <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="7*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/CommonAssets/Icons/Plus-100.png" Stretch="Uniform" Margin="0,0,0,20"></Image>
+                <ScrollViewer Grid.Row="1">
+                    <ItemsControl ItemsSource="{Binding DomoItemsList, Mode=TwoWay}" >
+                        <ItemsControl.DataContext>
+                            <local:HomeViewModel></local:HomeViewModel>
+                        </ItemsControl.DataContext>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <userControls:DomoItemControl/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+           
+          
+    <!--<ListBox ItemsSource="{Binding DomoItemsList, Mode=TwoWay}">
                 <ListBox.DataContext>
                     <local:HomeViewModel></local:HomeViewModel>
                 </ListBox.DataContext>

@@ -1,5 +1,6 @@
 ﻿using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using Hack4Europe.Utils;
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.UserControls
@@ -11,7 +12,8 @@ namespace Hack4Europe.UserControls
             Temperature,
             Heating,
             Cooling,
-            Safety
+            Safety,
+            Outlet
         }
 
         //public DomoItemType Type

@@ -145,6 +145,9 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItemControl.xbf">
       <PackagePath>UserControls\DomoItemControl.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\GenericActionControl.xbf">
+      <PackagePath>UserControls\GenericActionControl.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\MainViewGridControl.xbf">
       <PackagePath>UserControls\MainViewGridControl.xbf</PackagePath>
     </AppxPackagedFile>
@@ -153,6 +156,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\FirstPageView.xbf">
       <PackagePath>View\FirstPageView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\GenericActionView.xbf">
+      <PackagePath>View\GenericActionView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\HomeView.xbf">
       <PackagePath>View\HomeView.xbf</PackagePath>

@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml;
+﻿using System;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Hack4Europe.ViewModel;
 
@@ -54,9 +55,16 @@ namespace Hack4Europe.UserControls
 
         private void MainViewGridControl_OnLoaded(object sender, RoutedEventArgs e)
         {
-            (this.DataContext as MainViewGridViewModel).TopIconLogoUri = TopIconLogoUri;
-            (this.DataContext as MainViewGridViewModel).TopImageUri = TopImageUri;
-            (this.DataContext as MainViewGridViewModel).TopTitle = TopTitle;
+            try
+            {
+                (this.DataContext as MainViewGridViewModel).TopIconLogoUri = TopIconLogoUri;
+                (this.DataContext as MainViewGridViewModel).TopImageUri = TopImageUri;
+                (this.DataContext as MainViewGridViewModel).TopTitle = TopTitle;
+            }
+            catch (Exception exp)
+            {
+                
+            }
         }
     }
 }

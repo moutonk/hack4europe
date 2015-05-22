@@ -4,14 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="using:Hack4Europe.ViewModel"
     mc:Ignorable="d"
     Loaded="MainViewGridControl_OnLoaded">
-
-    <UserControl.DataContext>
-        <local:MainViewGridViewModel></local:MainViewGridViewModel>
-    </UserControl.DataContext>
-
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"></RowDefinition>
@@ -24,8 +19,8 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Image Name="TopImageUrImage" Grid.Column="0" Source="{Binding TopIconLogoUri}" VerticalAlignment="Center" Margin="15" ></Image>
-            <TextBlock Name="TopTitleTextBlock" Grid.Column="1" Text="{Binding TopTitle}" Foreground="White" VerticalAlignment="Center" Margin="10" FontSize="25"></TextBlock>
+            <Image Grid.Column="0" Source="{Binding TopIconLogoUri}" VerticalAlignment="Center" Margin="15" ></Image>
+            <TextBlock Grid.Column="1" Text="{Binding TopTitle}" Foreground="White" VerticalAlignment="Center" Margin="10" FontSize="25"></TextBlock>
             <Image Grid.Column="1" Margin="5,23,20,17" VerticalAlignment="Center" HorizontalAlignment="Left" Source="{Binding TopImageUri}"></Image>
         </Grid>
         <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource FlashBlue}"/>
@@ -37,8 +32,6 @@
             <Polygon Points="10,10 0,0, 20,0" Fill="{StaticResource FlashBlue}" HorizontalAlignment="Center"/>
         </Grid>
         <Grid Grid.Row="3" Background="{StaticResource LightBlue}"/>
-        <ScrollViewer Grid.Row="3" >
-            <StackPanel Margin="10" Name="ContentStackPanel"/>
-        </ScrollViewer>
+        <Grid Grid.Row="3" Margin="10" Name="ContentStackPanel"/>
     </Grid>
 </UserControl>

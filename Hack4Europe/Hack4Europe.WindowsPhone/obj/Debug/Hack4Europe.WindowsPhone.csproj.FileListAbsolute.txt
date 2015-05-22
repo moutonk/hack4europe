@@ -110,3 +110,13 @@ C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPh
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\ScenariosView.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\SettingsView.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\SignInView.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\GenericActionControl.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\GenericActionView.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\GenericActionControl.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\GenericActionControl.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\View\GenericActionView.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\View\GenericActionView.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\GenericActionControl.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\View\GenericActionView.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\GenericActionControl.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\View\GenericActionView.xbf

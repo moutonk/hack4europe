@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Background="LightBlue" Click="ButtonBase_OnClick"></Button>
+        <Button Background="Red" Click="ButtonBase_OnClick1"></Button>
+        <Button Background="Gray" Click="ButtonBase_OnClick2"></Button>
+        <Button Background="Green" Click="ButtonBase_OnClick3"></Button>
+        <Button Background="Yellow" Click="ButtonBase_OnClick4"></Button>
+    </StackPanel>
 </Page>

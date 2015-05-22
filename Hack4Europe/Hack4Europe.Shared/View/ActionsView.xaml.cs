@@ -1,30 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Pour en savoir plus sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=234238
+using Hack4Europe.UserControls;
 
 namespace Hack4Europe.View
 {
-    /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
-    /// </summary>
     public sealed partial class ActionsView : Page
     {
         public ActionsView()
         {
             this.InitializeComponent();
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Cooling);
+        }
+
+        private void ButtonBase_OnClick1(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Heating);
+        }
+
+        private void ButtonBase_OnClick2(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Safety);
+        }
+
+        private void ButtonBase_OnClick3(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Temperature);
+        }
+
+        private void ButtonBase_OnClick4(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Outlet);
         }
     }
 }

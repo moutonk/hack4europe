@@ -38,9 +38,11 @@ App.xbf
 Hack4Europe.WindowsPhone.xr.xml
 MainPage.xbf
 UserControls\DomoItemControl.xbf
+UserControls\GenericActionControl.xbf
 UserControls\MainViewGridControl.xbf
 View\ActionsView.xbf
 View\FirstPageView.xbf
+View\GenericActionView.xbf
 View\HomeView.xbf
 View\ScenariosView.xbf
 View\SettingsView.xbf

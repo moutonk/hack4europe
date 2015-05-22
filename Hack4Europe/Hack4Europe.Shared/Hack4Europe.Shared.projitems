@@ -22,6 +22,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\DomoItemControl.xaml.cs">
       <DependentUpon>DomoItemControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\GenericActionControl.xaml.cs">
+      <DependentUpon>GenericActionControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml.cs">
       <DependentUpon>MainViewGridControl.xaml</DependentUpon>
     </Compile>
@@ -29,7 +32,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Logs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CommonViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomoItemControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GenericActionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewGridViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
@@ -38,6 +43,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\FirstPageView.xaml.cs">
       <DependentUpon>FirstPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\GenericActionView.xaml.cs">
+      <DependentUpon>GenericActionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
@@ -62,6 +70,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\GenericActionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -71,6 +83,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)View\FirstPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)View\GenericActionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
