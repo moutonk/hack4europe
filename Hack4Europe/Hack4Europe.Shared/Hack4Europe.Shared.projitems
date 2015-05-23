@@ -19,6 +19,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\DataManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\RememberConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Other\Paths.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\ActionCubeControl.xaml.cs">
+      <DependentUpon>ActionCubeControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\DomoItemControl.xaml.cs">
       <DependentUpon>DomoItemControl.xaml</DependentUpon>
     </Compile>
@@ -32,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Logs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ActionCubeControlViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CommonViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomoItemControlViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GenericActionViewModel.cs" />
@@ -66,6 +70,10 @@
     <Folder Include="$(MSBuildThisFileDirectory)Ressources\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\ActionCubeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)UserControls\DomoItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

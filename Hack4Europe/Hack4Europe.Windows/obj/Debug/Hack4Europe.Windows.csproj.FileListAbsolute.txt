@@ -77,3 +77,13 @@ C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\o
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\MainViewGridControl.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\HomeView.xbf
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\SignInView.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\ActionCubeControl.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\ActionCubeControl.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\GenericActionControl.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\GenericActionControl.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\GenericActionView.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\GenericActionView.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\GenericActionControl.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\GenericActionView.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\UserControls\GenericActionControl.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Windows\obj\Debug\View\GenericActionView.xbf

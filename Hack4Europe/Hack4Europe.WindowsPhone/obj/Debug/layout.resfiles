@@ -37,6 +37,7 @@ Assets\WideLogo.scale-240.png
 App.xbf
 Hack4Europe.WindowsPhone.xr.xml
 MainPage.xbf
+UserControls\ActionCubeControl.xbf
 UserControls\DomoItemControl.xbf
 UserControls\GenericActionControl.xbf
 UserControls\MainViewGridControl.xbf
