@@ -36,6 +36,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Utils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ActionCubeControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ActionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CommonViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomoItemControlViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GenericActionViewModel.cs" />

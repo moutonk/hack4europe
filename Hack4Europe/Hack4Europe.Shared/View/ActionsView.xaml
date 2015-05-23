@@ -8,7 +8,7 @@
     xmlns:viewModel="using:Hack4Europe.ViewModel"
     mc:Ignorable="d">
 
-    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Icons/Idea-100.png" TopTitle="toto">
+    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Icons/Activity Grid 2-100.png" TopTitle="Actions">
         <userControls:MainViewGridControl.DataContext>
             <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
         </userControls:MainViewGridControl.DataContext>
@@ -21,7 +21,7 @@
                     <Button Background="Green" Width="20" Click="ButtonBase_OnClick3"></Button>
                     <Button Background="Yellow" Width="20" Click="ButtonBase_OnClick4"></Button>
                 </StackPanel>-->
-                <Grid>
+                <Grid Name="InteractiveGrid">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
@@ -30,8 +30,8 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <userControls:ActionCubeControl Name="Action1" Grid.Row="0" Grid.Column="0" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action2" Grid.Row="0" Grid.Column="1" Margin="5"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="0" Grid.Column="0" Margin="5" ColorCube="{StaticResource ActionGold}" IconCube="/CommonAssets/Icons/Temperature Filled-100.png" TitleCube="temperature"   TypeCube="Temperature"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="0" Grid.Column="1" Margin="5" ColorCube="{StaticResource ActionLime}" IconCube="/CommonAssets/Icons/IdeaOn-100.png"             TitleCube="lights on"        TypeCube="Lights"></userControls:ActionCubeControl>
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -43,12 +43,12 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <userControls:ActionCubeControl Name="Action3" Grid.Row="0" Grid.Column="0" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action4" Grid.Row="0" Grid.Column="1" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action5" Grid.Row="0" Grid.Column="2" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action6" Grid.Row="1" Grid.Column="0" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action7" Grid.Row="1" Grid.Column="1" Margin="5"></userControls:ActionCubeControl>
-                    <userControls:ActionCubeControl Name="Action8" Grid.Row="1" Grid.Column="2" Margin="5"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="0" Grid.Column="0" Margin="5" ColorCube="{StaticResource ActionLightGrey}"   IconCube="/CommonAssets/Icons/Air Conditioner-100.png"       TitleCube="ac"                  TypeCube="AC"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="0" Grid.Column="1" Margin="5" ColorCube="{StaticResource ActionDarkOrange}"  IconCube="/CommonAssets/Icons/Heating Room Filled-100.png"   TitleCube="heater"              TypeCube="Heater"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="0" Grid.Column="2" Margin="5" ColorCube="{StaticResource ActionGreen}"       IconCube="/CommonAssets/Icons/Lamp-100.png"                  TitleCube="lamps"               TypeCube="Lamps"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="1" Grid.Column="0" Margin="5" ColorCube="{StaticResource FlashBlue}"         IconCube="/CommonAssets/Icons/Lock 2-100_white.png"          TitleCube="security"            TypeCube="Security"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="1" Grid.Column="1" Margin="5" ColorCube="{StaticResource MediumBlue}"        IconCube="/CommonAssets/Icons/Wall Socket-100.png"           TitleCube="wall socket"         TypeCube="WallSocket"></userControls:ActionCubeControl>
+                    <userControls:ActionCubeControl Grid.Row="1" Grid.Column="2" Margin="5" ColorCube="{StaticResource ActionLightOrange}" IconCube="/CommonAssets/Icons/Motion Detector-100.png"       TitleCube="sensors"             TypeCube="Sensors"></userControls:ActionCubeControl>
                 </Grid>
             </StackPanel>
         </userControls:MainViewGridControl.Children>

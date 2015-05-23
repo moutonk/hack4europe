@@ -8,6 +8,7 @@
     <Application.Resources>
 
         <convert:DomoItemVisibilityConverters x:Key="DomoItemVisibilityConverters"></convert:DomoItemVisibilityConverters>
+        <convert:ActionCubeNumberVisibilityConverters x:Key="ActionCubeNumberVisibilityConverters"></convert:ActionCubeNumberVisibilityConverters>
         
         <SolidColorBrush x:Key="LightBlue">
             <Color>#DEEBF7</Color>

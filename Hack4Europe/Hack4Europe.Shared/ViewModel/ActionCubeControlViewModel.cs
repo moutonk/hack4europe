@@ -1,8 +1,9 @@
 ﻿using Windows.UI.Xaml.Media;
+using Hack4Europe.UserControls;
 
 namespace Hack4Europe.ViewModel
 {
-    class ActionCubeControlViewModel : ViewModelBase
+    public class ActionCubeControlViewModel : ViewModelBase
     {
         private string _iconCube;
         public string IconCube
@@ -26,7 +27,11 @@ namespace Hack4Europe.ViewModel
             }
             set
             {
-                NotifyPropertyChanged(ref _numberCube, value);
+                if (TypeCube == ActionCubeControl.ActionType.Temperature)
+                    NotifyPropertyChanged(ref _numberCube, "7 ");
+
+                if (TypeCube == ActionCubeControl.ActionType.Lights)
+                    NotifyPropertyChanged(ref _numberCube, "8 ");
             }
         }
 
@@ -40,6 +45,19 @@ namespace Hack4Europe.ViewModel
             set
             {
                 NotifyPropertyChanged(ref _titleCube, value);
+            }
+        }
+
+        private ActionCubeControl.ActionType _typeCube;
+        public ActionCubeControl.ActionType TypeCube
+        {
+            get
+            {
+                return _typeCube;
+            }
+            set
+            {
+                NotifyPropertyChanged(ref _typeCube, value);
             }
         }
 
