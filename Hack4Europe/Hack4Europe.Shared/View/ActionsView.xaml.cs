@@ -1,7 +1,4 @@
-﻿using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
-using Hack4Europe.ViewModel;
+﻿using Windows.UI.Xaml.Controls;
 
 namespace Hack4Europe.View
 {
@@ -19,31 +16,5 @@ namespace Hack4Europe.View
             //Action7.DataContext = new ActionCubeControlViewModel { IconCube = "/CommonAssets/Icons/Wall Socket-100.png", TitleCube = "wall socket", ColorCube = (SolidColorBrush)Application.Current.Resources["MediumBlue"] };
             //Action8.DataContext = new ActionCubeControlViewModel { IconCube = "/CommonAssets/Icons/Motion Detector-100.png", TitleCube = "sensors", ColorCube = (SolidColorBrush)Application.Current.Resources["ActionLightOrange"] };
         }
-
-        //private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-        //{
-        //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Cooling);
-        //}
-
-        //private void ButtonBase_OnClick1(object sender, RoutedEventArgs e)
-        //{
-        //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Heating);
-        //}
-
-        //private void ButtonBase_OnClick2(object sender, RoutedEventArgs e)
-        //{
-        //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Safety);
-        //}
-
-        //private void ButtonBase_OnClick3(object sender, RoutedEventArgs e)
-        //{
-        //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Temperature);
-        //}
-
-        //private void ButtonBase_OnClick4(object sender, RoutedEventArgs e)
-        //{
-        //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Outlet);
-        //}
-
     }
 }

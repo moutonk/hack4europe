@@ -95,7 +95,6 @@ namespace Hack4Europe.ViewModel
 
         public event System.EventHandler CanExecuteChanged;
 
-
         public void Execute(object parameter)
         {
             switch (TypeCube)
@@ -117,7 +116,7 @@ namespace Hack4Europe.ViewModel
                     break;
 
                 case ActionCubeControl.ActionType.WallSocket:
-                    _rootFrame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Outlet);
+                    _rootFrame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.WallSocket);
                     break;
 
                 case ActionCubeControl.ActionType.Sensors:
@@ -125,7 +124,7 @@ namespace Hack4Europe.ViewModel
                     break;
 
                 case ActionCubeControl.ActionType.Lamps:
-                    _rootFrame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Light);
+                    _rootFrame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Lamp);
                     break;
 
                 case ActionCubeControl.ActionType.Lights:

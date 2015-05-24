@@ -12,19 +12,11 @@ namespace Hack4Europe.UserControls
             Heating,
             Cooling,
             Safety,
-            Outlet,
+            WallSocket,
             Sensor,
-            Light
+            Light,
+            Lamp
         }
-
-        //public DomoItemType Type
-        //{
-        //    get { return (DomoItemType)this.GetValue(TypeProperty); }
-        //    set { this.SetValue(TypeProperty, value); }
-        //}
-        
-        //public static readonly DependencyProperty TypeProperty = DependencyProperty.Register(
-        //"Type", typeof(DomoItemType), typeof(DomoItemControl), new PropertyMetadata(DomoItemType.Temperature));
 
         public DomoItemControl()
         {

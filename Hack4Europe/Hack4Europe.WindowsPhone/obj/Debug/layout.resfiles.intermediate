@@ -25,6 +25,7 @@ CommonAssets\Icons\Unlock-100.png
 CommonAssets\Icons\Wall Socket-100.png
 CommonAssets\Icons\Winter-100_fat.png
 CommonAssets\Icons\Winter-100_thin.png
+CommonAssets\Images\homepage_img_small.jpg
 CommonAssets\Logos\logo.png
 CommonAssets\Logos\LOGO_sugar_mole.png
 CommonAssets\Logos\sugar_mole.png
@@ -40,6 +41,7 @@ MainPage.xbf
 UserControls\ActionCubeControl.xbf
 UserControls\DomoItemControl.xbf
 UserControls\GenericActionControl.xbf
+UserControls\HomePageItemControl.xbf
 UserControls\MainViewGridControl.xbf
 View\ActionsView.xbf
 View\FirstPageView.xbf

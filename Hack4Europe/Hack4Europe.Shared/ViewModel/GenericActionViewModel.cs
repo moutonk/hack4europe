@@ -23,33 +23,43 @@ namespace Hack4Europe.ViewModel
             switch (type)
             {
                 case DomoItemControl.DomoItemType.Temperature:
-                    TopIconLogoUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopImageUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopTitle = "temp";
+                    TopIconLogoUri = "/CommonAssets/Icons/Temperature Filled-100.png";
+                    TopTitle = "Temperatures";
                     break;
 
                 case DomoItemControl.DomoItemType.Cooling:
-                    TopIconLogoUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopImageUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopTitle = "Cooling";
+                    TopIconLogoUri = "/CommonAssets/Icons/Air Conditioner-100.png";
+                    TopTitle = "Air conditioner";
                     break;
 
                 case DomoItemControl.DomoItemType.Heating:
-                    TopIconLogoUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopImageUri = "/CommonAssets/Icon/Temperature Filled-100.png";
+                    TopIconLogoUri = "/CommonAssets/Icons/Heating Room Filled-100.png";
                     TopTitle = "Heating";
                     break;
 
-                case DomoItemControl.DomoItemType.Outlet:
-                    TopIconLogoUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopImageUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopTitle = "Outlet";
+                case DomoItemControl.DomoItemType.WallSocket:
+                    TopIconLogoUri = "/CommonAssets/Icons/Wall Socket-100.png";
+                    TopTitle = "Wall sockets";
                     break;
 
                 case DomoItemControl.DomoItemType.Safety:
-                    TopIconLogoUri = "/CommonAssets/Icon/Temperature Filled-100.png";
-                    TopImageUri = "/CommonAssets/Icon/Temperature Filled-100.png";
+                    TopIconLogoUri = "/CommonAssets/Icons/Lock 2-100_white.png";
                     TopTitle = "Safety";
+                    break;
+
+                case DomoItemControl.DomoItemType.Light:
+                    TopIconLogoUri = "/CommonAssets/Icons/IdeaOn-100.png";
+                    TopTitle = "Lights";
+                    break;
+
+                case DomoItemControl.DomoItemType.Lamp:
+                    TopIconLogoUri = "/CommonAssets/Icons/Lamp-100.png";
+                    TopTitle = "Lamps";
+                    break;
+
+                case DomoItemControl.DomoItemType.Sensor:
+                    TopIconLogoUri = "/CommonAssets/Icons/Motion Detector-100.png";
+                    TopTitle = "Sensors";
                     break;
             }
 

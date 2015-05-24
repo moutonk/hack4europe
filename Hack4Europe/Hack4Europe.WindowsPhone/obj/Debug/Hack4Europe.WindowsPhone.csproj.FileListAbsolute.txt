@@ -125,3 +125,8 @@ C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPh
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\ActionCubeControl.g.cs
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\ActionCubeControl.xaml
 C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\ActionCubeControl.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\HomePageItemControl.xbf
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\HomePageItemControl.g.i.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\HomePageItemControl.g.cs
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\HomePageItemControl.xaml
+C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\obj\Debug\UserControls\HomePageItemControl.xbf

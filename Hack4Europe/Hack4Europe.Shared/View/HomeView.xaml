@@ -2,46 +2,27 @@
     x:Class="Hack4Europe.View.HomeView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:userControls="using:Hack4Europe.UserControls"
-    xmlns:local="using:Hack4Europe.ViewModel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:userControls="using:Hack4Europe.UserControls"
+    mc:Ignorable="d"
+    Background="{StaticResource LightBlue}">
 
-    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Logos/logo.png" TopImageUri="/CommonAssets/Logos/sugar_mole.png">
-       <userControls:MainViewGridControl.Children>
-           <Grid>
-               <Grid.RowDefinitions>
-                    <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="7*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/CommonAssets/Icons/Plus-100.png" Stretch="Uniform" Margin="0,0,0,20"></Image>
-                <ScrollViewer Grid.Row="1">
-                    <ItemsControl ItemsSource="{Binding DomoItemsList, Mode=TwoWay}" >
-                        <ItemsControl.DataContext>
-                            <local:HomeViewModel></local:HomeViewModel>
-                        </ItemsControl.DataContext>
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <userControls:DomoItemControl/>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
-                </ScrollViewer>
-            </Grid>
-           
-          
-    <!--<ListBox ItemsSource="{Binding DomoItemsList, Mode=TwoWay}">
-                <ListBox.DataContext>
-                    <local:HomeViewModel></local:HomeViewModel>
-                </ListBox.DataContext>
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <userControls:DomoItemControl/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>-->
-        </userControls:MainViewGridControl.Children>
-    </userControls:MainViewGridControl>
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="/CommonAssets/Images/homepage_img_small.jpg" Stretch="UniformToFill"></Image>
+        <StackPanel Grid.Row="1" Background="{StaticResource DarkGrey}">
+            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Overview Pages 2-100.png" Title="SCENARIOS"/>
+            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Activity Grid 2-100.png" Title="ACTIONS"/>
+            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/System Information-100.png" Title="COMPATIBILITY"/>
+            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Settings-100.png" Title="SETTINGS"/>
+        </StackPanel>
+        <Border Grid.Row="2" Background="{StaticResource FlashBlue}">
+            <Image Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform" Margin="20"></Image>
+        </Border>
+    </Grid>
 </Page>

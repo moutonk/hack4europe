@@ -28,6 +28,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\GenericActionControl.xaml.cs">
       <DependentUpon>GenericActionControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\HomePageItemControl.xaml.cs">
+      <DependentUpon>HomePageItemControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml.cs">
       <DependentUpon>MainViewGridControl.xaml</DependentUpon>
     </Compile>
@@ -40,6 +43,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CommonViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomoItemControlViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GenericActionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewGridViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
@@ -80,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)UserControls\GenericActionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\HomePageItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -144,6 +152,7 @@
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Wall Socket-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_fat.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_thin.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Images\homepage_img_small.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Logos\logo.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Logos\LOGO_sugar_mole.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Logos\sugar_mole.png" />
