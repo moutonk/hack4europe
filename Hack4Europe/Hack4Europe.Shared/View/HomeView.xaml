@@ -6,23 +6,42 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:userControls="using:Hack4Europe.UserControls"
     mc:Ignorable="d"
-    Background="{StaticResource LightBlue}">
+    Background="{StaticResource DarkGrey}">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="7*"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Source="/CommonAssets/Images/homepage_img_small.jpg" Stretch="UniformToFill"></Image>
-        <StackPanel Grid.Row="1" Background="{StaticResource DarkGrey}">
-            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Overview Pages 2-100.png" Title="SCENARIOS"/>
-            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Activity Grid 2-100.png" Title="ACTIONS"/>
-            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/System Information-100.png" Title="COMPATIBILITY"/>
-            <userControls:HomePageItemControl Icon="/CommonAssets/Icons/Settings-100.png" Title="SETTINGS"/>
-        </StackPanel>
+        <Grid Grid.Row="1" Background="{StaticResource DarkGrey}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="3"></RowDefinition>
+            </Grid.RowDefinitions>
+            <userControls:BlueLineControl Grid.Column="0" Grid.Row="0"></userControls:BlueLineControl>
+            <userControls:HomePageItemControl Grid.Column="0" Grid.Row="1" Icon="/CommonAssets/Icons/Overview Pages 2-100.png"   Title="SCENARIOS"       Type="Scenarios"/>
+            <Border Grid.Column="0" Grid.Row="2" Background="LightBlue"></Border>
+            <userControls:HomePageItemControl Grid.Column="0" Grid.Row="3" Icon="/CommonAssets/Icons/Activity Grid 2-100.png"    Title="ACTIONS"         Type="Actions"/>
+            <Border Grid.Column="0" Grid.Row="4" Background="LightBlue"></Border>
+            <userControls:HomePageItemControl Grid.Column="0" Grid.Row="5" Icon="/CommonAssets/Icons/System Information-100.png" Title="COMPATIBILITY"   Type="Compatibility"/>
+            <Border Grid.Column="0" Grid.Row="6" Background="LightBlue"></Border>
+            <userControls:HomePageItemControl Grid.Column="0" Grid.Row="7" Icon="/CommonAssets/Icons/Settings-100.png"           Title="SETTINGS"        Type="Settings"/>
+            <Border Grid.Column="0" Grid.Row="8" Background="LightBlue"></Border>
+        </Grid>
         <Border Grid.Row="2" Background="{StaticResource FlashBlue}">
-            <Image Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform" Margin="20"></Image>
+            <Image Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform" Margin="10"></Image>
         </Border>
     </Grid>
 </Page>

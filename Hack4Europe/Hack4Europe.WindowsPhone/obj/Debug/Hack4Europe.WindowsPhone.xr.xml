@@ -19,6 +19,7 @@
     <RootPropertyPathName Name="TopImageUri" />
     <RootPropertyPathName Name="TopTitle" />
     <RootPropertyPathName Name="DomoItemsList" />
+    <RootPropertyPathName Name="OnClickCommand" />
     <RootPropertyPathName Name="Title" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -38,12 +39,13 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
@@ -58,8 +60,6 @@
     </RootType>
     <RootType FullName="Hack4Europe.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
-      <RootProperty Name="VerticalContentAlignment" />
-      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
@@ -72,6 +72,9 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Command" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -85,7 +88,6 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Margin" />
@@ -115,6 +117,15 @@
       <RootProperty Name="TitleCube" />
       <RootProperty Name="TypeCube" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
+      <RootProperty Name="Points" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Hack4Europe.UserControls.BlueLineControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Name" />
       <RootProperty Name="Height" />
@@ -163,7 +174,6 @@
       <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Child" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -197,9 +207,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
       <RootProperty Name="Content" />
       <RootProperty Name="ContentTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />
@@ -246,14 +253,11 @@
     <RootType FullName="Hack4Europe.UserControls.HomePageItemControl">
       <RootProperty Name="Icon" />
       <RootProperty Name="Title" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Polygon">
-      <RootProperty Name="Points" />
-      <RootProperty Name="Fill" />
-      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Type" />
     </RootType>
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Hack4Europe.View.ActionsView" />
+    <RootType FullName="Hack4Europe.View.CompatibilityView" />
     <RootType FullName="Hack4Europe.View.FirstPageView" />
     <RootType FullName="Hack4Europe.View.GenericActionView" />
     <RootType FullName="Hack4Europe.View.HomeView" />

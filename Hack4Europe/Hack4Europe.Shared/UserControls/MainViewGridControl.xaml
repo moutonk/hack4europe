@@ -4,14 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControls="using:Hack4Europe.UserControls"
     mc:Ignorable="d"
     Loaded="MainViewGridControl_OnLoaded">
-    
-    <Grid>
+
+    <Grid Background="{StaticResource LightBlue}" >
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="50*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="{StaticResource DarkGrey}">
@@ -23,15 +23,8 @@
             <TextBlock Grid.Column="1" Text="{Binding TopTitle}" Foreground="White" VerticalAlignment="Center" Margin="10" FontSize="25"></TextBlock>
             <Image Grid.Column="1" Margin="5,23,20,17" VerticalAlignment="Center" HorizontalAlignment="Left" Source="{Binding TopImageUri}"></Image>
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource FlashBlue}"/>
-        <Grid Grid.Row="2" Grid.Column="0" Background="{StaticResource LightBlue}">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="4*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Polygon Points="10,10 0,0, 20,0" Fill="{StaticResource FlashBlue}" HorizontalAlignment="Center"/>
-        </Grid>
-        <Grid Grid.Row="3" Background="{StaticResource LightBlue}"/>
-        <Grid Grid.Row="3" Margin="10" Name="ContentStackPanel"/>
+        <userControls:BlueLineControl Grid.Row="1"></userControls:BlueLineControl>
+        <Grid Grid.Row="2" Background="{StaticResource LightBlue}"/>
+        <Grid Grid.Row="2" Margin="10" Name="ContentStackPanel"/>
     </Grid>
 </UserControl>

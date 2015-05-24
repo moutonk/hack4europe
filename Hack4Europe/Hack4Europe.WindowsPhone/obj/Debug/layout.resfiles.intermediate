@@ -39,11 +39,13 @@ App.xbf
 Hack4Europe.WindowsPhone.xr.xml
 MainPage.xbf
 UserControls\ActionCubeControl.xbf
+UserControls\BlueLineControl.xbf
 UserControls\DomoItemControl.xbf
 UserControls\GenericActionControl.xbf
 UserControls\HomePageItemControl.xbf
 UserControls\MainViewGridControl.xbf
 View\ActionsView.xbf
+View\CompatibilityView.xbf
 View\FirstPageView.xbf
 View\GenericActionView.xbf
 View\HomeView.xbf

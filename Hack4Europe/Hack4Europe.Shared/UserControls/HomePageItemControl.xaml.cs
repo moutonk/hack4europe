@@ -6,6 +6,14 @@ namespace Hack4Europe.UserControls
 {
     public sealed partial class HomePageItemControl : UserControl
     {
+        public enum HomePageItemType
+        {
+            Scenarios,
+            Actions,
+            Compatibility,
+            Settings
+        }
+
         #region DependancyProperties
 
         public string Title
@@ -26,6 +34,15 @@ namespace Hack4Europe.UserControls
         public static readonly DependencyProperty IconProperty = DependencyProperty.Register(
         "Icon", typeof(string), typeof(HomePageItemControl), new PropertyMetadata(string.Empty));
 
+        public HomePageItemType Type
+        {
+            get { return (HomePageItemType)this.GetValue(TypeProperty); }
+            set { this.SetValue(TypeProperty, value); }
+        }
+
+        public static readonly DependencyProperty TypeProperty = DependencyProperty.Register(
+        "Type", typeof(HomePageItemType), typeof(HomePageItemControl), null);
+
         #endregion
 
         public HomePageItemControl()
@@ -38,6 +55,7 @@ namespace Hack4Europe.UserControls
         {
             (DataContext as HomePageItemViewModel).Icon = Icon;
             (DataContext as HomePageItemViewModel).Title = Title;
+            (DataContext as HomePageItemViewModel).Type = Type;
         }
     }
 }

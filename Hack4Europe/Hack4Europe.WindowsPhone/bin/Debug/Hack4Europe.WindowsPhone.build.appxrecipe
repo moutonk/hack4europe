@@ -148,6 +148,9 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\ActionCubeControl.xbf">
       <PackagePath>UserControls\ActionCubeControl.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\BlueLineControl.xbf">
+      <PackagePath>UserControls\BlueLineControl.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\UserControls\DomoItemControl.xbf">
       <PackagePath>UserControls\DomoItemControl.xbf</PackagePath>
     </AppxPackagedFile>
@@ -162,6 +165,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\ActionsView.xbf">
       <PackagePath>View\ActionsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\CompatibilityView.xbf">
+      <PackagePath>View\CompatibilityView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.WindowsPhone\bin\Debug\View\FirstPageView.xbf">
       <PackagePath>View\FirstPageView.xbf</PackagePath>

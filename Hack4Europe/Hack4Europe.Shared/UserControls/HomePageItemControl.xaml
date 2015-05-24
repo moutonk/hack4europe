@@ -5,20 +5,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{StaticResource DarkGrey}"
+    Background="{StaticResource FlashBlue}"
     Loaded="HomePageItemControl_OnLoaded">
 
-    <StackPanel>
+    <Button Padding="-10" Command="{Binding OnClickCommand}"  BorderThickness="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="7*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="{Binding Icon}" Stretch="Uniform" Margin="10"></Image>
-            <TextBlock Grid.Column="1" FontSize="25" Text="{Binding Title}" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
+            <Image Grid.Column="0" Source="{Binding Icon}" Stretch="Uniform" Margin="30,15,15,15"></Image>
+            <TextBlock Grid.Column="1" FontSize="17" Text="{Binding Title}" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
         </Grid>
-        <Border BorderThickness="2" BorderBrush="{StaticResource LightBlue}" Height="2"/>
-    </StackPanel>
-  
-    
+    </Button>
 </UserControl>
