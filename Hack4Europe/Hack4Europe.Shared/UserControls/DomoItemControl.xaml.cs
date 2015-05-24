@@ -12,7 +12,9 @@ namespace Hack4Europe.UserControls
             Heating,
             Cooling,
             Safety,
-            Outlet
+            Outlet,
+            Sensor,
+            Light
         }
 
         //public DomoItemType Type

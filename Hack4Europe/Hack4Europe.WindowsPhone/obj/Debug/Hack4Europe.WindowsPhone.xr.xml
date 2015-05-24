@@ -5,6 +5,7 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="ColorCube" />
+    <RootPropertyPathName Name="CommandCube" />
     <RootPropertyPathName Name="TitleCube" />
     <RootPropertyPathName Name="NumberCube" />
     <RootPropertyPathName Name="IconCube" />
@@ -67,6 +68,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Command" />
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>
