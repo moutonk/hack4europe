@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:userControls="using:Hack4Europe.UserControls"
+    xmlns:viewModel="using:Hack4Europe.ViewModel"
     mc:Ignorable="d"
     Background="{StaticResource DarkGrey}">
 
@@ -41,7 +42,12 @@
             <Border Grid.Column="0" Grid.Row="8" Background="LightBlue"></Border>
         </Grid>
         <Border Grid.Row="2" Background="{StaticResource FlashBlue}">
-            <Image Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform" Margin="10"></Image>
+            <Button Style="{StaticResource ButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="-10" BorderThickness="0" Command="{Binding VoiceCommand}">
+                <Button.DataContext>
+                    <viewModel:HomeViewModel></viewModel:HomeViewModel>
+                </Button.DataContext>
+                <Image Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform" Margin="17"></Image>
+            </Button>
         </Border>
     </Grid>
 </Page>

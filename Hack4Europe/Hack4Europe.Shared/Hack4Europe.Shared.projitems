@@ -74,6 +74,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\SignInView.xaml.cs">
       <DependentUpon>SignInView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\VoiceRecognitionView.xaml.cs">
+      <DependentUpon>VoiceRecognitionView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Ws\WebService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Ws\WebServiceEndDetector.cs" />
   </ItemGroup>
@@ -134,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)View\SignInView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)View\VoiceRecognitionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

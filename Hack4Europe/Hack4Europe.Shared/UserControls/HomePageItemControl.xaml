@@ -5,16 +5,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{StaticResource FlashBlue}"
     Loaded="HomePageItemControl_OnLoaded">
 
-    <Button Padding="-10" Command="{Binding OnClickCommand}"  BorderThickness="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+    <Button Style="{StaticResource ButtonStyle}" Padding="-10" Command="{Binding OnClickCommand}"  BorderThickness="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="{Binding Icon}" Stretch="Uniform" Margin="30,15,15,15"></Image>
+            <Image Grid.Column="0" Source="{Binding Icon}" Stretch="Uniform" Margin="30,20,20,20"></Image>
             <TextBlock Grid.Column="1" FontSize="17" Text="{Binding Title}" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
         </Grid>
     </Button>

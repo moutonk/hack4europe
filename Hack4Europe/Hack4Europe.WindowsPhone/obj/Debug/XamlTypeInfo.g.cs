@@ -124,7 +124,7 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[33];
+            _typeNameTable = new string[36];
             _typeNameTable[0] = "Hack4Europe.Utils.DomoItemVisibilityConverters";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Hack4Europe.Utils.ActionCubeNumberVisibilityConverters";
@@ -154,12 +154,15 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             _typeNameTable[26] = "Hack4Europe.View.CompatibilityView";
             _typeNameTable[27] = "Hack4Europe.View.FirstPageView";
             _typeNameTable[28] = "Hack4Europe.View.GenericActionView";
-            _typeNameTable[29] = "Hack4Europe.View.HomeView";
-            _typeNameTable[30] = "Hack4Europe.View.ScenariosView";
-            _typeNameTable[31] = "Hack4Europe.View.SettingsView";
-            _typeNameTable[32] = "Hack4Europe.View.SignInView";
+            _typeNameTable[29] = "Hack4Europe.ViewModel.HomeViewModel";
+            _typeNameTable[30] = "System.Windows.Input.ICommand";
+            _typeNameTable[31] = "Hack4Europe.View.HomeView";
+            _typeNameTable[32] = "Hack4Europe.View.ScenariosView";
+            _typeNameTable[33] = "Hack4Europe.View.SettingsView";
+            _typeNameTable[34] = "Hack4Europe.View.SignInView";
+            _typeNameTable[35] = "Hack4Europe.View.VoiceRecognitionView";
 
-            _typeTable = new global::System.Type[33];
+            _typeTable = new global::System.Type[36];
             _typeTable[0] = typeof(global::Hack4Europe.Utils.DomoItemVisibilityConverters);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Hack4Europe.Utils.ActionCubeNumberVisibilityConverters);
@@ -189,10 +192,13 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             _typeTable[26] = typeof(global::Hack4Europe.View.CompatibilityView);
             _typeTable[27] = typeof(global::Hack4Europe.View.FirstPageView);
             _typeTable[28] = typeof(global::Hack4Europe.View.GenericActionView);
-            _typeTable[29] = typeof(global::Hack4Europe.View.HomeView);
-            _typeTable[30] = typeof(global::Hack4Europe.View.ScenariosView);
-            _typeTable[31] = typeof(global::Hack4Europe.View.SettingsView);
-            _typeTable[32] = typeof(global::Hack4Europe.View.SignInView);
+            _typeTable[29] = typeof(global::Hack4Europe.ViewModel.HomeViewModel);
+            _typeTable[30] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[31] = typeof(global::Hack4Europe.View.HomeView);
+            _typeTable[32] = typeof(global::Hack4Europe.View.ScenariosView);
+            _typeTable[33] = typeof(global::Hack4Europe.View.SettingsView);
+            _typeTable[34] = typeof(global::Hack4Europe.View.SignInView);
+            _typeTable[35] = typeof(global::Hack4Europe.View.VoiceRecognitionView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -242,10 +248,12 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
         private object Activate_26_CompatibilityView() { return new global::Hack4Europe.View.CompatibilityView(); }
         private object Activate_27_FirstPageView() { return new global::Hack4Europe.View.FirstPageView(); }
         private object Activate_28_GenericActionView() { return new global::Hack4Europe.View.GenericActionView(); }
-        private object Activate_29_HomeView() { return new global::Hack4Europe.View.HomeView(); }
-        private object Activate_30_ScenariosView() { return new global::Hack4Europe.View.ScenariosView(); }
-        private object Activate_31_SettingsView() { return new global::Hack4Europe.View.SettingsView(); }
-        private object Activate_32_SignInView() { return new global::Hack4Europe.View.SignInView(); }
+        private object Activate_29_HomeViewModel() { return new global::Hack4Europe.ViewModel.HomeViewModel(); }
+        private object Activate_31_HomeView() { return new global::Hack4Europe.View.HomeView(); }
+        private object Activate_32_ScenariosView() { return new global::Hack4Europe.View.ScenariosView(); }
+        private object Activate_33_SettingsView() { return new global::Hack4Europe.View.SettingsView(); }
+        private object Activate_34_SignInView() { return new global::Hack4Europe.View.SignInView(); }
+        private object Activate_35_VoiceRecognitionView() { return new global::Hack4Europe.View.VoiceRecognitionView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -461,30 +469,51 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Hack4Europe.View.HomeView
-                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_HomeView;
+            case 29:   //  Hack4Europe.ViewModel.HomeViewModel
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
+                userType.Activator = Activate_29_HomeViewModel;
+                userType.AddMemberName("VoiceCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Hack4Europe.View.ScenariosView
+            case 30:   //  System.Windows.Input.ICommand
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 31:   //  Hack4Europe.View.HomeView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_ScenariosView;
+                userType.Activator = Activate_31_HomeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Hack4Europe.View.SettingsView
+            case 32:   //  Hack4Europe.View.ScenariosView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_SettingsView;
+                userType.Activator = Activate_32_ScenariosView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Hack4Europe.View.SignInView
+            case 33:   //  Hack4Europe.View.SettingsView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_SignInView;
+                userType.Activator = Activate_33_SettingsView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Hack4Europe.View.SignInView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_34_SignInView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 35:   //  Hack4Europe.View.VoiceRecognitionView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_VoiceRecognitionView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -693,6 +722,16 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             var that = (global::Hack4Europe.ViewModel.ViewModelBase)instance;
             that.WsOver = (global::System.Boolean)Value;
         }
+        private object get_20_HomeViewModel_VoiceCommand(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
+            return that.VoiceCommand;
+        }
+        private void set_20_HomeViewModel_VoiceCommand(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
+            that.VoiceCommand = (global::System.Windows.Input.ICommand)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -831,6 +870,12 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "WsOver", "Boolean");
                 xamlMember.Getter = get_19_ViewModelBase_WsOver;
                 xamlMember.Setter = set_19_ViewModelBase_WsOver;
+                break;
+            case "Hack4Europe.ViewModel.HomeViewModel.VoiceCommand":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.HomeViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "VoiceCommand", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_20_HomeViewModel_VoiceCommand;
+                xamlMember.Setter = set_20_HomeViewModel_VoiceCommand;
                 break;
             }
             return xamlMember;
