@@ -1,5 +1,6 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.View
@@ -43,5 +44,6 @@ namespace Hack4Europe.View
         //{
         //    Frame.Navigate(typeof(GenericActionView), DomoItemControl.DomoItemType.Outlet);
         //}
+
     }
 }

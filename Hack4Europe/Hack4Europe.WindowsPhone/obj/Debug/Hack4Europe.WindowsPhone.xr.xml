@@ -4,7 +4,6 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Width" />
     <RootPropertyPathName Name="ColorCube" />
     <RootPropertyPathName Name="TitleCube" />
     <RootPropertyPathName Name="NumberCube" />
@@ -37,12 +36,12 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="Background" />
-      <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
@@ -57,30 +56,40 @@
     </RootType>
     <RootType FullName="Hack4Europe.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
-      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootEvent Name="Loaded" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="RelativeSource" />
-      <RootProperty Name="Path" />
       <RootProperty Name="Converter" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Mode" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -93,18 +102,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Stretch" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Hack4Europe.UserControls.ActionCubeControl">
       <RootProperty Name="Margin" />
@@ -163,6 +160,9 @@
       <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
     </RootType>
@@ -190,6 +190,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
       <RootProperty Name="Content" />
       <RootProperty Name="ContentTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />
@@ -247,9 +250,6 @@
     <RootType FullName="Hack4Europe.View.HomeView" />
     <RootType FullName="Hack4Europe.View.ScenariosView" />
     <RootType FullName="Hack4Europe.View.SettingsView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Hack4Europe.View.SignInView" />
   </Roots.RootTypes>
 </Roots>
