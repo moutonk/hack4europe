@@ -73,7 +73,7 @@ namespace Hack4Europe.ViewModel
                     break;
 
                 case HomePageItemControl.HomePageItemType.Scenarios:
-                    _rootFrame.Navigate(typeof(ScenariosView));
+                    _rootFrame.Navigate(typeof(ScenariosView), DomoItemControl.DomoItemType.Scenario);
                     break;
 
                 case HomePageItemControl.HomePageItemType.Compatibility:

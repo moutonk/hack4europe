@@ -39,6 +39,5 @@ namespace Hack4Europe
         {
             Frame.Navigate(typeof (FirstPageView));
         }
-
     }
 }

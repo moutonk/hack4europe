@@ -61,6 +61,11 @@ namespace Hack4Europe.ViewModel
                     TopIconLogoUri = "/CommonAssets/Icons/Motion Detector-100.png";
                     TopTitle = "Sensors";
                     break;
+
+                case DomoItemControl.DomoItemType.Scenario:
+                    TopIconLogoUri = "/CommonAssets/Icons/Overview Pages 2-100.png";
+                    TopTitle = "Scenarios";
+                    break;
             }
 
             var tmp = new ObservableCollection<DomoItemControlViewModel>()

@@ -15,7 +15,8 @@ namespace Hack4Europe.UserControls
             WallSocket,
             Sensor,
             Light,
-            Lamp
+            Lamp,
+            Scenario
         }
 
         public DomoItemControl()
