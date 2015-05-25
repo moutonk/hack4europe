@@ -5,10 +5,60 @@
     xmlns:local="using:Hack4Europe.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Background="{StaticResource LightBlue}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Source="/CommonAssets/Logos/sugar_mole.png" Width="200"></Image>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Background="{StaticResource FacebookBlue}" Grid.Column="0">
+                <TextBlock Text="Facebook" FontSize="25" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </Border>
+            <Border Background="{StaticResource GoogleRed}" Grid.Column="1">
+                <TextBlock Text="Google" FontSize="25" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </Border>
+        </Grid>
+        <TextBlock Grid.Row="2" Text="or sign up with email" FontSize="18" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Background="White">
+                <Image Margin="20" Source="/CommonAssets/Icons/New Post-100.png" Stretch="Uniform"></Image>
+                <TextBox Margin="10,0,0,0"  BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email" ></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Background="White" Margin="0,2,0,0">
+                <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
+                <PasswordBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password" ></PasswordBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Background="White" Margin="0,2,0,0">
+                <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
+                <PasswordBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Confirm password" ></PasswordBox>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Row="4" Foreground="WhiteSmoke" Margin="0,-10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">
+            <TextBlock Text="Sign up" FontSize="25" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </Button>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Already member?" FontSize="18" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Sign in" Margin="10,0,0,0" FontSize="18" Foreground="{StaticResource FlashBlue}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
 

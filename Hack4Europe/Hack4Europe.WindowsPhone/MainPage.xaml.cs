@@ -52,7 +52,7 @@ namespace Hack4Europe
 
         private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof (HomeView));
+            Frame.Navigate(typeof (FirstPageView));
         }
 
     }

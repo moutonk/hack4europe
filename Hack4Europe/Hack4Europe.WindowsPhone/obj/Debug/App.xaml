@@ -40,6 +40,13 @@
         <SolidColorBrush x:Key="ActionLightOrange">
             <Color>#ED7D31</Color>
         </SolidColorBrush>
+        <SolidColorBrush x:Key="FacebookBlue">
+            <Color>#3b5998</Color>
+        </SolidColorBrush>
+        <SolidColorBrush x:Key="GoogleRed">
+            <Color>#dd4b39</Color>
+        </SolidColorBrush>
+        
 
         <Style TargetType="Button" x:Key="ButtonStyle">
             <Setter Property="Background" Value="{ThemeResource ButtonBackgroundThemeBrush}" />
