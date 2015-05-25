@@ -2,19 +2,50 @@
     x:Class="Hack4Europe.View.SignInView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Hack4Europe.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:userControls="using:Hack4Europe.UserControls"
     xmlns:viewModel="using:Hack4Europe.ViewModel"
     mc:Ignorable="d">
 
-    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Icons/Idea-100.png" TopTitle="toto">
+    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Logos/logo.png" TopTitle="Connection">
         <userControls:MainViewGridControl.DataContext>
             <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
         </userControls:MainViewGridControl.DataContext>
         <userControls:MainViewGridControl.Children>
-            <Button x:ConnectionId='1'                           ></Button>
+            <Grid Name="ContentGrid">
+                <Grid.DataContext>
+                    <viewModel:SignInViewModel></viewModel:SignInViewModel>
+                </Grid.DataContext>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Source="/CommonAssets/Logos/sugar_mole.png" Width="200"></Image>
+                <Grid Grid.Row="1" Margin="-10,0,-10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Background="White">
+                        <Image Margin="20" Source="/CommonAssets/Icons/New Post-100.png" Stretch="Uniform"></Image>
+                        <TextBox x:ConnectionId='2' Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email"                          ></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Background="White" Margin="0,2,0,0">
+                        <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
+                        <PasswordBox x:ConnectionId='1' Name="PasswordBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password"                                ></PasswordBox>
+                    </StackPanel>
+                </Grid>
+                <Button Grid.Row="2" Margin="-10,-10,-10,0" Foreground="WhiteSmoke" Command="{Binding OnClickCommand}" CommandParameter="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">
+                    <TextBlock Text="Sign in" FontSize="25" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                </Button>
+            </Grid>
         </userControls:MainViewGridControl.Children>
     </userControls:MainViewGridControl>
 </Page>

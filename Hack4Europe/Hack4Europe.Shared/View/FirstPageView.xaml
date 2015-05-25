@@ -5,8 +5,14 @@
     xmlns:local="using:Hack4Europe.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Background="{StaticResource LightBlue}">
-
+    xmlns:viewModel="using:Hack4Europe.ViewModel"
+    mc:Ignorable="d" 
+    Background="{StaticResource LightBlue}">
+    
+    <Page.DataContext>
+        <viewModel:FirstViewViewModel></viewModel:FirstViewViewModel>
+    </Page.DataContext>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"></RowDefinition>
@@ -41,23 +47,23 @@
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0" Background="White">
                 <Image Margin="20" Source="/CommonAssets/Icons/New Post-100.png" Stretch="Uniform"></Image>
-                <TextBox Margin="10,0,0,0"  BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email" ></TextBox>
+                <TextBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email" KeyDown="EmailOnKey_Down"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="1" Background="White" Margin="0,2,0,0">
                 <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
-                <PasswordBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password" ></PasswordBox>
+                <PasswordBox Name="PasswordBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password" KeyDown="PasswordBox_OnKeyDown"></PasswordBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="2" Background="White" Margin="0,2,0,0">
                 <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
-                <PasswordBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Confirm password" ></PasswordBox>
+                <PasswordBox Name="PasswordConfirmBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Confirm password" KeyDown="PasswordConfirmBox_OnKeyDown"></PasswordBox>
             </StackPanel>
         </Grid>
-        <Button Grid.Row="4" Foreground="WhiteSmoke" Margin="0,-10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">
+        <Button Grid.Row="4" Foreground="WhiteSmoke" Command="{Binding OnClickCommand}" CommandParameter="0" Margin="0,-10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">
             <TextBlock Text="Sign up" FontSize="25" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         </Button>
         <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
             <TextBlock Text="Already member?" FontSize="18" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-            <TextBlock Text="Sign in" Margin="10,0,0,0" FontSize="18" Foreground="{StaticResource FlashBlue}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <Button Content="Sign in" Margin="-20,-5,0,0" Command="{Binding OnClickCommand}" CommandParameter="1" Padding="-10" Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonStyle}" FontSize="18" Foreground="{StaticResource FlashBlue}"></Button>
         </StackPanel>
     </Grid>
 </Page>

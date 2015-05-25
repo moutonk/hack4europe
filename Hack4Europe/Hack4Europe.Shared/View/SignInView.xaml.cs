@@ -1,25 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Pour en savoir plus sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=234238
+using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.View
 {
-    /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
-    /// </summary>
     public sealed partial class SignInView : Page
     {
         public SignInView()
@@ -27,9 +13,16 @@ namespace Hack4Europe.View
             this.InitializeComponent();
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void EmailOnKey_Down(object sender, KeyRoutedEventArgs e)
         {
-            Frame.Navigate((typeof (ActionsView)));
+            if (e.Key == VirtualKey.Enter)
+                PasswordBox.Focus(FocusState.Keyboard);
+        }
+
+        private void PasswordBox_OnKeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == VirtualKey.Enter)
+                (ContentGrid.DataContext as SignInViewModel).SignUp();
         }
     }
 }

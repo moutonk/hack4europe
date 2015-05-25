@@ -43,12 +43,12 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="CommandParameter" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="DataContext" />
-      <RootProperty Name="CommandParameter" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
@@ -84,6 +84,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="DataContext" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -155,6 +156,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -281,12 +283,15 @@
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.CompatibilityView" />
+    <RootType FullName="Hack4Europe.ViewModel.FirstViewViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
@@ -294,6 +299,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Hack4Europe.View.FirstPageView" />
     <RootType FullName="Hack4Europe.View.GenericActionView" />
@@ -302,6 +308,7 @@
     <RootType FullName="Hack4Europe.View.ScenariosView" />
     <RootType FullName="Hack4Europe.ViewModel.SettingsViewModel" />
     <RootType FullName="Hack4Europe.View.SettingsView" />
+    <RootType FullName="Hack4Europe.ViewModel.SignInViewModel" />
     <RootType FullName="Hack4Europe.View.SignInView" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Width" />

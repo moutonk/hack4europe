@@ -45,11 +45,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ActionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CommonViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomoItemControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FirstViewViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GenericActionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewGridViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SettingsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SignInViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\VoiceRecognitionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\ActionsView.xaml.cs">
