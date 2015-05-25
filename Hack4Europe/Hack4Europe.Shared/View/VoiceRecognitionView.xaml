@@ -5,9 +5,28 @@
     xmlns:local="using:Hack4Europe.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControls="using:Hack4Europe.UserControls"
+    xmlns:viewModel="using:Hack4Europe.ViewModel"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Icons/Microphone-100.png" TopTitle="Voice recognition">
+        <userControls:MainViewGridControl.DataContext>
+            <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
+        </userControls:MainViewGridControl.DataContext>
+        <userControls:MainViewGridControl.Children>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Listening..." FontSize="25" Foreground="Black" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <Ellipse Grid.Row="1" Width="220" Height="220" Fill="{StaticResource FlashBlue}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                </Ellipse>
+                <Ellipse Grid.Row="1" Width="240" Height="240" Stroke="{StaticResource MediumBlue}" StrokeThickness="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+                </Ellipse>
+                <Image Grid.Row="1" Width="140" Source="/CommonAssets/Icons/Microphone-100.png" Stretch="Uniform"></Image>
+            </Grid>
+        </userControls:MainViewGridControl.Children>
+    </userControls:MainViewGridControl>
 </Page>

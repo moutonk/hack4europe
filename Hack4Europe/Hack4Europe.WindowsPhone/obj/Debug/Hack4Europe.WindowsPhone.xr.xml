@@ -180,6 +180,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -193,6 +194,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontStyle" />
     </RootType>
     <RootType FullName="Hack4Europe.UserControls.ActionCubeControl">
       <RootProperty Name="Margin" />
@@ -279,6 +281,15 @@
     <RootType FullName="Hack4Europe.View.ScenariosView" />
     <RootType FullName="Hack4Europe.View.SettingsView" />
     <RootType FullName="Hack4Europe.View.SignInView" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
     <RootType FullName="Hack4Europe.View.VoiceRecognitionView" />
   </Roots.RootTypes>
 </Roots>

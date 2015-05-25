@@ -16,6 +16,10 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Source="/CommonAssets/Images/homepage_img_small.jpg" Stretch="UniformToFill"></Image>
+        <StackPanel Grid.Row="0" Margin="10">
+            <Image Source="/CommonAssets/Logos/sugar_mole.png" Stretch="Uniform" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="make your life easier" FontSize="15" Foreground="{StaticResource FlashBlue}"></TextBlock>
+        </StackPanel>
         <Grid Grid.Row="1" Background="{StaticResource DarkGrey}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
