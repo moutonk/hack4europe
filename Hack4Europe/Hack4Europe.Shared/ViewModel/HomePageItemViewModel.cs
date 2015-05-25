@@ -77,11 +77,11 @@ namespace Hack4Europe.ViewModel
                     break;
 
                 case HomePageItemControl.HomePageItemType.Compatibility:
-                    _rootFrame.Navigate(typeof(ScenariosView));
+                    _rootFrame.Navigate(typeof(CompatibilityView));
                     break;
 
                 case HomePageItemControl.HomePageItemType.Settings:
-                    _rootFrame.Navigate(typeof(CompatibilityView));
+                    _rootFrame.Navigate(typeof(SettingsView));
                     break;
             }
         }

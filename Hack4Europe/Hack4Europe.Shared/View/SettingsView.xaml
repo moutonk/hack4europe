@@ -5,9 +5,22 @@
     xmlns:local="using:Hack4Europe.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControls="using:Hack4Europe.UserControls"
+    xmlns:viewModel="using:Hack4Europe.ViewModel"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <userControls:MainViewGridControl TopIconLogoUri="/CommonAssets/Icons/Settings-100.png" TopTitle="Settings">
+        <userControls:MainViewGridControl.DataContext>
+            <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
+        </userControls:MainViewGridControl.DataContext>
+        <userControls:MainViewGridControl.Children>
+            <StackPanel>
+                <StackPanel.DataContext>
+                    <viewModel:SettingsViewModel></viewModel:SettingsViewModel>
+                </StackPanel.DataContext>
+                <Button Padding="-10" Background="{StaticResource FlashBlue}" Content="LOG OFF" BorderThickness="0" HorizontalAlignment="Stretch" Command="{Binding ItemClickCommand}" CommandParameter="0"></Button>
+                <Button Padding="-10" Background="{StaticResource FlashBlue}" Content="ABOUT" BorderThickness="0" HorizontalAlignment="Stretch" Command="{Binding ItemClickCommand}" CommandParameter="1"></Button>
+            </StackPanel>
+        </userControls:MainViewGridControl.Children>
+    </userControls:MainViewGridControl>
 </Page>
