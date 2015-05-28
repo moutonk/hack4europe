@@ -468,6 +468,9 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
                 userType.Activator = Activate_27_FirstViewViewModel;
                 userType.AddMemberName("OnClickCommand");
+                userType.AddMemberName("Login");
+                userType.AddMemberName("Password1");
+                userType.AddMemberName("Password2");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -533,6 +536,8 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
                 userType.Activator = Activate_36_SignInViewModel;
                 userType.AddMemberName("OnClickCommand");
+                userType.AddMemberName("Login");
+                userType.AddMemberName("Password");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -765,35 +770,85 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             that.OnClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_21_HomeViewModel_VoiceCommand(object instance)
+        private object get_21_FirstViewViewModel_Login(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            return that.Login;
+        }
+        private void set_21_FirstViewViewModel_Login(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            that.Login = (global::System.String)Value;
+        }
+        private object get_22_FirstViewViewModel_Password1(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            return that.Password1;
+        }
+        private void set_22_FirstViewViewModel_Password1(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            that.Password1 = (global::System.String)Value;
+        }
+        private object get_23_FirstViewViewModel_Password2(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            return that.Password2;
+        }
+        private void set_23_FirstViewViewModel_Password2(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
+            that.Password2 = (global::System.String)Value;
+        }
+        private object get_24_HomeViewModel_VoiceCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
             return that.VoiceCommand;
         }
-        private void set_21_HomeViewModel_VoiceCommand(object instance, object Value)
+        private void set_24_HomeViewModel_VoiceCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
             that.VoiceCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_22_SettingsViewModel_ItemClickCommand(object instance)
+        private object get_25_SettingsViewModel_ItemClickCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SettingsViewModel)instance;
             return that.ItemClickCommand;
         }
-        private void set_22_SettingsViewModel_ItemClickCommand(object instance, object Value)
+        private void set_25_SettingsViewModel_ItemClickCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SettingsViewModel)instance;
             that.ItemClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_23_SignInViewModel_OnClickCommand(object instance)
+        private object get_26_SignInViewModel_OnClickCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             return that.OnClickCommand;
         }
-        private void set_23_SignInViewModel_OnClickCommand(object instance, object Value)
+        private void set_26_SignInViewModel_OnClickCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             that.OnClickCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_27_SignInViewModel_Login(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
+            return that.Login;
+        }
+        private void set_27_SignInViewModel_Login(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
+            that.Login = (global::System.String)Value;
+        }
+        private object get_28_SignInViewModel_Password(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
+            return that.Password;
+        }
+        private void set_28_SignInViewModel_Password(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
+            that.Password = (global::System.String)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -940,23 +995,53 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_20_FirstViewViewModel_OnClickCommand;
                 xamlMember.Setter = set_20_FirstViewViewModel_OnClickCommand;
                 break;
+            case "Hack4Europe.ViewModel.FirstViewViewModel.Login":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Login", "String");
+                xamlMember.Getter = get_21_FirstViewViewModel_Login;
+                xamlMember.Setter = set_21_FirstViewViewModel_Login;
+                break;
+            case "Hack4Europe.ViewModel.FirstViewViewModel.Password1":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password1", "String");
+                xamlMember.Getter = get_22_FirstViewViewModel_Password1;
+                xamlMember.Setter = set_22_FirstViewViewModel_Password1;
+                break;
+            case "Hack4Europe.ViewModel.FirstViewViewModel.Password2":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password2", "String");
+                xamlMember.Getter = get_23_FirstViewViewModel_Password2;
+                xamlMember.Setter = set_23_FirstViewViewModel_Password2;
+                break;
             case "Hack4Europe.ViewModel.HomeViewModel.VoiceCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.HomeViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "VoiceCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_21_HomeViewModel_VoiceCommand;
-                xamlMember.Setter = set_21_HomeViewModel_VoiceCommand;
+                xamlMember.Getter = get_24_HomeViewModel_VoiceCommand;
+                xamlMember.Setter = set_24_HomeViewModel_VoiceCommand;
                 break;
             case "Hack4Europe.ViewModel.SettingsViewModel.ItemClickCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SettingsViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "ItemClickCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_22_SettingsViewModel_ItemClickCommand;
-                xamlMember.Setter = set_22_SettingsViewModel_ItemClickCommand;
+                xamlMember.Getter = get_25_SettingsViewModel_ItemClickCommand;
+                xamlMember.Setter = set_25_SettingsViewModel_ItemClickCommand;
                 break;
             case "Hack4Europe.ViewModel.SignInViewModel.OnClickCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "OnClickCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_23_SignInViewModel_OnClickCommand;
-                xamlMember.Setter = set_23_SignInViewModel_OnClickCommand;
+                xamlMember.Getter = get_26_SignInViewModel_OnClickCommand;
+                xamlMember.Setter = set_26_SignInViewModel_OnClickCommand;
+                break;
+            case "Hack4Europe.ViewModel.SignInViewModel.Login":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Login", "String");
+                xamlMember.Getter = get_27_SignInViewModel_Login;
+                xamlMember.Setter = set_27_SignInViewModel_Login;
+                break;
+            case "Hack4Europe.ViewModel.SignInViewModel.Password":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password", "String");
+                xamlMember.Getter = get_28_SignInViewModel_Password;
+                xamlMember.Setter = set_28_SignInViewModel_Password;
                 break;
             }
             return xamlMember;
@@ -1283,5 +1368,6 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
         }
     }
 }
+
 
 

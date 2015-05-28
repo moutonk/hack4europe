@@ -1,4 +1,6 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System;
+using Windows.UI.ViewManagement;
+using Windows.UI.Xaml.Controls;
 
 namespace Hack4Europe.View
 {
@@ -7,6 +9,10 @@ namespace Hack4Europe.View
         public ActionsView()
         {
             this.InitializeComponent();
+#if WINDOWS_PHONE_APP
+            StatusBar.GetForCurrentView().HideAsync();
+#endif
+
             //Action1.DataContext = new ActionCubeControlViewModel { IconCube = "/CommonAssets/Icons/Temperature Filled-100.png", TitleCube = "temperature", NumberCube = "2", ColorCube = (SolidColorBrush)Application.Current.Resources["ActionGold"] };
             //Action2.DataContext = new ActionCubeControlViewModel { IconCube = "/CommonAssets/Icons/IdeaOn-100.png", TitleCube = "lights", NumberCube = "2", ColorCube = (SolidColorBrush)Application.Current.Resources["ActionLime"] };
             //Action3.DataContext = new ActionCubeControlViewModel { IconCube = "/CommonAssets/Icons/Air Conditioner-100.png", TitleCube = "air conditionner", ColorCube = (SolidColorBrush)Application.Current.Resources["ActionLightGrey"] };

@@ -21,8 +21,12 @@
     <RootPropertyPathName Name="DomoItemsList" />
     <RootPropertyPathName Name="OnClickCommand" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Password2" />
+    <RootPropertyPathName Name="Password1" />
+    <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="VoiceCommand" />
     <RootPropertyPathName Name="ItemClickCommand" />
+    <RootPropertyPathName Name="Password" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -286,6 +290,7 @@
     <RootType FullName="Hack4Europe.ViewModel.FirstViewViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
+      <RootProperty Name="Password" />
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
@@ -295,6 +300,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />

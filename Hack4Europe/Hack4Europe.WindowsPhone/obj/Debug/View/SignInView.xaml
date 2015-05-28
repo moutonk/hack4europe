@@ -35,11 +35,11 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal" Grid.Row="0" Background="White">
                         <Image Margin="20" Source="/CommonAssets/Icons/New Post-100.png" Stretch="Uniform"></Image>
-                        <TextBox x:ConnectionId='2' Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email"                          ></TextBox>
+                        <TextBox x:ConnectionId='2' Margin="10,0,0,0" Text="{Binding Login}" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email"                          ></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="1" Background="White" Margin="0,2,0,0">
                         <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
-                        <PasswordBox x:ConnectionId='1' Name="PasswordBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password"                                ></PasswordBox>
+                        <PasswordBox x:ConnectionId='1' Name="PasswordBox" Password="{Binding Password}" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password"                                ></PasswordBox>
                     </StackPanel>
                 </Grid>
                 <Button Grid.Row="2" Margin="-10,-10,-10,0" Foreground="WhiteSmoke" Command="{Binding OnClickCommand}" CommandParameter="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">

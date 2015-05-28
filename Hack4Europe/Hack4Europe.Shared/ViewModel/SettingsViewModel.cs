@@ -20,7 +20,7 @@ namespace Hack4Europe.ViewModel
 
         public void Execute(object parameter)
         {
-            var num = (int) parameter;
+            var num = int.Parse((string)parameter);
 
             switch (num)
             {

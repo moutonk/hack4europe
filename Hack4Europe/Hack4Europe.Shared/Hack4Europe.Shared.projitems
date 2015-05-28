@@ -18,6 +18,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\DataHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\DataManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\RememberConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ModelDalBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SignInModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SignUpModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Other\Paths.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\ActionCubeControl.xaml.cs">
       <DependentUpon>ActionCubeControl.xaml</DependentUpon>

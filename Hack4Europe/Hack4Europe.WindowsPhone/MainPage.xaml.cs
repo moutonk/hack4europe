@@ -1,4 +1,7 @@
-﻿using Windows.Phone.UI.Input;
+﻿using System;
+using System.Linq.Expressions;
+using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -11,24 +14,36 @@ namespace Hack4Europe
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            HardwareButtons.BackPressed += delegate(object sender, BackPressedEventArgs args)
+            Init();
+        }
+
+        private async void Init()
+        {
+            HardwareButtons.BackPressed += async delegate(object sender, BackPressedEventArgs args)
             {
                 if (Frame.CanGoBack)
                 {
                     args.Handled = true;
-                    if (Frame.CanGoBack == true)
+                    if (Frame.CanGoBack == true && (Frame.CurrentSourcePageType != typeof(FirstPageView) &&
+                                                    Frame.CurrentSourcePageType != typeof(HomeView)))
                     {
                         Frame.GoBack();
                     }
                     else
                     {
-                        //quitter
+                        var dialog = new MessageDialog("Are you sure?") { Title = "Really?" };
+                        dialog.Commands.Add(new UICommand { Label = "Ok", Id = 0 });
+                        dialog.Commands.Add(new UICommand { Label = "Cancel", Id = 1 });
+                        var res = await dialog.ShowAsync();
+
+                        if ((int)res.Id == 0)
+                        {
+                            Application.Current.Exit();
+                        }
                     }
                 }
             };
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -37,7 +52,7 @@ namespace Hack4Europe
 
         private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof (FirstPageView));
+            Frame.Navigate(typeof(FirstPageView));
         }
     }
 }

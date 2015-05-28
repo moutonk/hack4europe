@@ -1,7 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.ComTypes;
-using Windows.UI.Xaml.Controls.Primitives;
 using Hack4Europe.ViewModel;
 
 namespace Hack4Europe.Data

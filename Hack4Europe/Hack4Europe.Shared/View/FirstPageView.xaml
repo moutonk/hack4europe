@@ -47,15 +47,15 @@
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0" Background="White">
                 <Image Margin="20" Source="/CommonAssets/Icons/New Post-100.png" Stretch="Uniform"></Image>
-                <TextBox Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email" KeyDown="EmailOnKey_Down"></TextBox>
+                <TextBox Margin="10,0,0,0" Text="{Binding Login}" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Email" KeyDown="EmailOnKey_Down"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="1" Background="White" Margin="0,2,0,0">
                 <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
-                <PasswordBox Name="PasswordBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password" KeyDown="PasswordBox_OnKeyDown"></PasswordBox>
+                <PasswordBox Name="PasswordBox" Password="{Binding Password1}" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Password" KeyDown="PasswordBox_OnKeyDown"></PasswordBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="2" Background="White" Margin="0,2,0,0">
                 <Image Margin="20" Source="/CommonAssets/Icons/Lock 2-100_grey.png" Stretch="Uniform"></Image>
-                <PasswordBox Name="PasswordConfirmBox" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Confirm password" KeyDown="PasswordConfirmBox_OnKeyDown"></PasswordBox>
+                <PasswordBox Name="PasswordConfirmBox" Password="{Binding Password2}" Margin="10,0,0,0" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" PlaceholderText="Confirm password" KeyDown="PasswordConfirmBox_OnKeyDown"></PasswordBox>
             </StackPanel>
         </Grid>
         <Button Grid.Row="4" Foreground="WhiteSmoke" Command="{Binding OnClickCommand}" CommandParameter="0" Margin="0,-10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"  Background="{StaticResource FlashBlue}">

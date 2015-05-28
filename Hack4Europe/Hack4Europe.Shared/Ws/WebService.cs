@@ -12,7 +12,7 @@ using Hack4Europe.Utils;
 
 namespace Hack4Europe.Ws
 {
-    public enum WebServiceResponse
+    public enum WebServiceResponseType
     {
         Success,
         Failure
@@ -20,14 +20,7 @@ namespace Hack4Europe.Ws
 
     public enum RequestType
     {
-        Couple,
         User,
-        Fantasy,
-        FantasyId,
-        FantasySeen,
-        Feedback,
-        Notification,
-        Settings
     }
 
     public enum RequestContentType
@@ -42,10 +35,23 @@ namespace Hack4Europe.Ws
         public string CodeDescription { get; set; }
     }
 
+    public class WebServiceResponse
+    {
+        public object Data { get; set; }
+        public WebServiceError Error { get; set; }
+
+        public WebServiceResponse()
+        {
+            Data = null;
+            Error = null;
+        }
+    }
+
     public class WebService
     {
         private CookieCollection _cookieColl = new CookieCollection();
         private readonly CookieContainer _cookieContainer = new CookieContainer();
+        private Action<WebServiceResponse> _callback { get; set; } 
 
         public string Result { get; private set; }
         public bool IsRequestOver { get; private set; }
@@ -65,6 +71,7 @@ namespace Hack4Europe.Ws
                                 RequestType reqType,
                                 RequestContentType reqContentType,
                                 Dictionary<string, string> bodyArgs,
+                                Action<WebServiceResponse> callback,
                                 List<string> urlArgs = null)
         {
             ReqType = reqType;
@@ -72,6 +79,7 @@ namespace Hack4Europe.Ws
             HttpReqType = httpReqType;
             Error.CodeDescription = null;
             Error.ErrorCode = null;
+            _callback = callback;
 
             Logs.Output.ShowOutput(Environment.NewLine + "SendRequest: " + httpReqType + " " + reqType + " " + bodyArgs.Aggregate("", (current, keyValuePair) => current + ("[" + keyValuePair.Key + " " + keyValuePair.Value + "]")));
 
@@ -91,21 +99,7 @@ namespace Hack4Europe.Ws
             switch (reqType)
             {
                 case RequestType.User:
-                    return "user/";
-                case RequestType.Couple:
-                    return "couple/";
-                case RequestType.Fantasy:
-                    return "fantaisy/";
-                case RequestType.FantasyId:
-                    return string.Format("fantaisy/{0}/", rareArgs[0]);
-                case RequestType.FantasySeen:
-                    return "fantaisySeen/";
-                case RequestType.Feedback:
-                    return "feedback/";
-                case RequestType.Notification:
-                    return "notification/";
-                case RequestType.Settings:
-                    return "settings/";
+                    return "api/user/";
                 default:
                     return reqType.ToString();
             }
@@ -241,7 +235,12 @@ namespace Hack4Europe.Ws
                     if (response.Cookies != null)
                         ShowCookiesInfos(response);
 
-                    Result = await responseString;
+                    var res = new WebServiceResponse
+                    {
+                        Data = await responseString,
+                    };
+                    _callback(res);
+
                     Logs.Output.ShowOutput("Answer: " + Result);
                 }
             }
@@ -258,20 +257,28 @@ namespace Hack4Europe.Ws
 
         private void ManageResponseExplicitError(WebException e)
         {
-            Logs.Output.ShowOutput("GetResponseCallback: " + e.Message + ": " + e.InnerException.Message);
+            Logs.Output.ShowOutput("GetResponseCallback: " + e.Message);
             var aResp = e.Response as HttpWebResponse;
 
             if (aResp == null)
                 return;
 
             Logs.Output.ShowOutput("statusCode: " + (int)aResp.StatusCode);
-            Error.ErrorCode = aResp.StatusCode;
-            Error.CodeDescription = aResp.StatusDescription;
             using (var reader = new StreamReader(aResp.GetResponseStream()))
             {
                 Result = reader.ReadToEnd();
                 Logs.Output.ShowOutput(Result);
             }
+
+            var res = new WebServiceResponse
+            {
+                Error = new WebServiceError
+                {
+                    CodeDescription = aResp.StatusDescription,
+                    ErrorCode = aResp.StatusCode
+                }
+            };
+            _callback(res);
         }
 
         public BitmapImage DownloadImageUrl(string url)
