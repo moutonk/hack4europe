@@ -4,7 +4,7 @@ using Hack4Europe.UserControls;
 
 namespace Hack4Europe.ViewModel
 {
-    class DomoItemControlViewModel : ViewModelBase
+    public class DomoItemControlViewModel : ViewModelBase
     {
         private string _textDescription;
         public string TextDescription

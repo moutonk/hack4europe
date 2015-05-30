@@ -25,8 +25,11 @@ namespace Hack4Europe
                 if (Frame.CanGoBack)
                 {
                     args.Handled = true;
-                    if (Frame.CanGoBack == true && (Frame.CurrentSourcePageType != typeof(FirstPageView) &&
-                                                    Frame.CurrentSourcePageType != typeof(HomeView)))
+                    if (Frame.CanGoBack == true 
+                        //&& 
+                        //(Frame.CurrentSourcePageType != typeof(FirstPageView) &&
+                        //                            Frame.CurrentSourcePageType != typeof(HomeView))
+                        )
                     {
                         Frame.GoBack();
                     }

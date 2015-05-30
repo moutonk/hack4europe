@@ -6,6 +6,7 @@ using Windows.UI.Xaml.Controls;
 using Hack4Europe.Model;
 using Hack4Europe.View;
 using Hack4Europe.Ws;
+using Windows.UI.Core;
 
 namespace Hack4Europe.ViewModel
 {
@@ -91,7 +92,7 @@ namespace Hack4Europe.ViewModel
 
         public void SignUpCallback(WebServiceResponse data)
         {
-            _frame.Navigate(typeof(SignInView));
+            Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => _frame.Navigate(typeof(SignInView)));
         }
 
         public void SignIn()
