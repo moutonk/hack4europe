@@ -86,6 +86,9 @@ namespace Hack4Europe.Utils
 
                 case DomoItemControl.DomoItemType.Safety:
                     return Visibility.Collapsed;
+
+                case DomoItemControl.DomoItemType.Scenario:
+                    return Visibility.Collapsed;
                 
                 default:
                     return Visibility.Visible;
@@ -106,6 +109,24 @@ namespace Hack4Europe.Utils
                 throw new InvalidOperationException("The target must be a Visibility");
 
             if (string.IsNullOrWhiteSpace((string) value))
+                return Visibility.Collapsed;
+            return Visibility.Visible;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class BoolToVisibilityConverters : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (targetType != typeof(Visibility))
+                throw new InvalidOperationException("The target must be a Visibility");
+
+            if ((bool)value == false)
                 return Visibility.Collapsed;
             return Visibility.Visible;
         }

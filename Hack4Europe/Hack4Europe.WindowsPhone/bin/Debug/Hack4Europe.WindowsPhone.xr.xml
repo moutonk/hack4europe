@@ -19,8 +19,12 @@
     <RootPropertyPathName Name="TopImageUri" />
     <RootPropertyPathName Name="TopTitle" />
     <RootPropertyPathName Name="DomoItemsList" />
+    <RootPropertyPathName Name="AddCommand" />
     <RootPropertyPathName Name="OnClickCommand" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="IsAddActive" />
+    <RootPropertyPathName Name="HeaderColor" />
+    <RootPropertyPathName Name="HeaderTitle" />
     <RootPropertyPathName Name="Password2" />
     <RootPropertyPathName Name="Password1" />
     <RootPropertyPathName Name="Login" />
@@ -34,6 +38,7 @@
     </RootType>
     <RootType FullName="Hack4Europe.Utils.DomoItemVisibilityConverters" />
     <RootType FullName="Hack4Europe.Utils.ActionCubeNumberVisibilityConverters" />
+    <RootType FullName="Hack4Europe.Utils.BoolToVisibilityConverters" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
@@ -42,15 +47,16 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Command" />
       <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="CommandParameter" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="DataContext" />
     </RootType>
@@ -132,6 +138,7 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Child" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="IsHitTestVisible" />
@@ -193,6 +200,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootEvent Name="Tapped" />
     </RootType>
@@ -284,23 +292,33 @@
       <RootProperty Name="Title" />
       <RootProperty Name="Type" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
+    <RootType FullName="Hack4Europe.UserControls.ScenarioGroupControl">
+      <RootProperty Name="HeaderTitle" />
+      <RootProperty Name="ScenarioGroupType" />
+      <RootProperty Name="HeaderColorBrush" />
+      <RootProperty Name="IsAddActive" />
+    </RootType>
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.CompatibilityView" />
-    <RootType FullName="Hack4Europe.ViewModel.FirstViewViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="Name" />
-      <RootProperty Name="Password" />
+    <RootType FullName="Hack4Europe.View.CreateActionView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Text" />
       <RootEvent Name="KeyDown" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+    <RootType FullName="Hack4Europe.View.CreateScenarioView" />
+    <RootType FullName="Hack4Europe.View.CreateTriggerView" />
+    <RootType FullName="Hack4Europe.ViewModel.FirstViewViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Password" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Text" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />

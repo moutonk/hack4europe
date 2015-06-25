@@ -14,7 +14,9 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="7*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/CommonAssets/Icons/Plus-100.png" Stretch="Uniform" Margin="0,0,0,20"></Image>
+                <Button Grid.Row="0" BorderThickness="0" Command="{Binding AddCommand}" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                    <Image Source="/CommonAssets/Icons/Plus-100.png" Stretch="Uniform" ></Image>
+                </Button>
                 <ScrollViewer Grid.Row="1">
                     <ItemsControl ItemsSource="{Binding DomoItemsList, Mode=TwoWay}" >
                         <!--<ItemsControl.DataContext>

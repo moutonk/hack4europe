@@ -20,6 +20,7 @@ namespace Hack4Europe.Data
         public static ObservableCollection<DomoItemControlViewModel> SecurityDomoItemList { get; set; }
         public static ObservableCollection<DomoItemControlViewModel> WallSocketDomoItemList { get; set; }
         public static ObservableCollection<DomoItemControlViewModel> SensorsDomoItemList { get; set; }
+        public static ObservableCollection<DomoItemControlViewModel> ScenariosItemList { get; set; }
 
         static DataManager()
         {
@@ -79,6 +80,13 @@ namespace Hack4Europe.Data
                 new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Electricity-100_fat.png", Id = 0, State = IconInfoViewModel.IconState.Active}, Type = DomoItemControl.DomoItemType.WallSocket, TextDescription = "Kitchen microwave", ValueSlider = 40, WsOver = true},
                 new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Electricity-100_thin.png", Id = 1, State = IconInfoViewModel.IconState.Inactive}, Type = DomoItemControl.DomoItemType.WallSocket, TextDescription = "Bedroom desk lamp", ValueSlider = 40, WsOver = true},
                 new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Electricity-100_thin.png", Id = 1, State = IconInfoViewModel.IconState.Inactive}, Type = DomoItemControl.DomoItemType.WallSocket, TextDescription = "Oven", ValueSlider = 40, WsOver = true},
+            };
+
+            ScenariosItemList = new ObservableCollection<DomoItemControlViewModel>
+            {
+                new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Rain-100.png", Id = -1, State = IconInfoViewModel.IconState.Active}, Type = DomoItemControl.DomoItemType.Scenario, TextDescription = "When it's runny outside, turn off the air conditionning", ValueSlider = 30, WsOver = true},
+                new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Sun-100.png", Id = -1, State = IconInfoViewModel.IconState.Active}, Type = DomoItemControl.DomoItemType.Scenario, TextDescription = "When it's sunny outside, open the blinds and turn off the heater", ValueSlider = 40, WsOver = true},
+                new DomoItemControlViewModel {Icon = new IconInfoViewModel {Uri = "/CommonAssets/Icons/Temperature Filled-100.png", Id = -1, State = IconInfoViewModel.IconState.Active}, Type = DomoItemControl.DomoItemType.Scenario, TextDescription = "If the temperature goes below 18°, turn on the heater in every room", ValueSlider = 40, WsOver = true},
             };
 
             //SensorsDomoItemList = new ObservableCollection<DomoItemControlViewModel>

@@ -58,7 +58,7 @@ namespace Hack4Europe.ViewModel
         {
             OnClickCommand = this;
             _frame = (Frame) Window.Current.Content;
-            Login = "keke";
+            Login = "kevin@hack4europe.com";
             Password1 = "toto";
             Password2 = "toto";
         }

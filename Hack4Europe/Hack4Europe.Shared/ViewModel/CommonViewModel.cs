@@ -1,6 +1,8 @@
-﻿namespace Hack4Europe.ViewModel
+﻿using Hack4Europe.UserControls;
+
+namespace Hack4Europe.ViewModel
 {
-    class CommonViewModel : ViewModelBase
+    public class CommonViewModel : ViewModelBase
     {
         private string _topIconLogo;
         public string TopIconLogoUri
@@ -40,5 +42,7 @@
                 NotifyPropertyChanged(ref _topTitle, value);
             }
         }
+
+        public DomoItemControl.DomoItemType Type { get; set; }
     }
 }

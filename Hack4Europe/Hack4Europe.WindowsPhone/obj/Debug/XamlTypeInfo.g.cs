@@ -124,87 +124,101 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[39];
+            _typeNameTable = new string[46];
             _typeNameTable[0] = "Hack4Europe.Utils.DomoItemVisibilityConverters";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Hack4Europe.Utils.ActionCubeNumberVisibilityConverters";
-            _typeNameTable[3] = "Windows.UI.Color";
-            _typeNameTable[4] = "System.ValueType";
-            _typeNameTable[5] = "Byte";
-            _typeNameTable[6] = "Hack4Europe.MainPage";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[9] = "Hack4Europe.UserControls.ActionCubeControl";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "Windows.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[12] = "Hack4Europe.UserControls.ActionCubeControl.ActionType";
-            _typeNameTable[13] = "System.Enum";
-            _typeNameTable[14] = "Hack4Europe.UserControls.BlueLineControl";
-            _typeNameTable[15] = "Hack4Europe.UserControls.DomoItemControl";
-            _typeNameTable[16] = "Hack4Europe.UserControls.MainViewGridControl";
-            _typeNameTable[17] = "Windows.UI.Xaml.Controls.UIElementCollection";
-            _typeNameTable[18] = "Hack4Europe.UserControls.GenericActionControl";
-            _typeNameTable[19] = "Hack4Europe.UserControls.HomePageItemControl";
-            _typeNameTable[20] = "Hack4Europe.UserControls.HomePageItemControl.HomePageItemType";
-            _typeNameTable[21] = "Hack4Europe.ViewModel.MainViewGridViewModel";
-            _typeNameTable[22] = "Hack4Europe.ViewModel.CommonViewModel";
-            _typeNameTable[23] = "Hack4Europe.ViewModel.ViewModelBase";
-            _typeNameTable[24] = "Boolean";
-            _typeNameTable[25] = "Hack4Europe.View.ActionsView";
-            _typeNameTable[26] = "Hack4Europe.View.CompatibilityView";
-            _typeNameTable[27] = "Hack4Europe.ViewModel.FirstViewViewModel";
-            _typeNameTable[28] = "System.Windows.Input.ICommand";
-            _typeNameTable[29] = "Hack4Europe.View.FirstPageView";
-            _typeNameTable[30] = "Hack4Europe.View.GenericActionView";
-            _typeNameTable[31] = "Hack4Europe.ViewModel.HomeViewModel";
-            _typeNameTable[32] = "Hack4Europe.View.HomeView";
-            _typeNameTable[33] = "Hack4Europe.View.ScenariosView";
-            _typeNameTable[34] = "Hack4Europe.ViewModel.SettingsViewModel";
-            _typeNameTable[35] = "Hack4Europe.View.SettingsView";
-            _typeNameTable[36] = "Hack4Europe.ViewModel.SignInViewModel";
-            _typeNameTable[37] = "Hack4Europe.View.SignInView";
-            _typeNameTable[38] = "Hack4Europe.View.VoiceRecognitionView";
+            _typeNameTable[3] = "Hack4Europe.Utils.BoolToVisibilityConverters";
+            _typeNameTable[4] = "Windows.UI.Color";
+            _typeNameTable[5] = "System.ValueType";
+            _typeNameTable[6] = "Byte";
+            _typeNameTable[7] = "Hack4Europe.MainPage";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[10] = "Hack4Europe.UserControls.ActionCubeControl";
+            _typeNameTable[11] = "String";
+            _typeNameTable[12] = "Windows.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[13] = "Hack4Europe.UserControls.ActionCubeControl.ActionType";
+            _typeNameTable[14] = "System.Enum";
+            _typeNameTable[15] = "Hack4Europe.UserControls.BlueLineControl";
+            _typeNameTable[16] = "Hack4Europe.UserControls.DomoItemControl";
+            _typeNameTable[17] = "Hack4Europe.UserControls.MainViewGridControl";
+            _typeNameTable[18] = "Windows.UI.Xaml.Controls.UIElementCollection";
+            _typeNameTable[19] = "Hack4Europe.UserControls.GenericActionControl";
+            _typeNameTable[20] = "Hack4Europe.UserControls.HomePageItemControl";
+            _typeNameTable[21] = "Hack4Europe.UserControls.HomePageItemControl.HomePageItemType";
+            _typeNameTable[22] = "Hack4Europe.UserControls.ScenarioGroupControl";
+            _typeNameTable[23] = "Boolean";
+            _typeNameTable[24] = "Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum";
+            _typeNameTable[25] = "Hack4Europe.ViewModel.MainViewGridViewModel";
+            _typeNameTable[26] = "Hack4Europe.ViewModel.CommonViewModel";
+            _typeNameTable[27] = "Hack4Europe.ViewModel.ViewModelBase";
+            _typeNameTable[28] = "Hack4Europe.UserControls.DomoItemControl.DomoItemType";
+            _typeNameTable[29] = "Hack4Europe.View.ActionsView";
+            _typeNameTable[30] = "Hack4Europe.View.CompatibilityView";
+            _typeNameTable[31] = "Hack4Europe.View.CreateActionView";
+            _typeNameTable[32] = "Hack4Europe.View.CreateScenarioView";
+            _typeNameTable[33] = "Hack4Europe.View.CreateTriggerView";
+            _typeNameTable[34] = "Hack4Europe.ViewModel.FirstViewViewModel";
+            _typeNameTable[35] = "System.Windows.Input.ICommand";
+            _typeNameTable[36] = "Hack4Europe.View.FirstPageView";
+            _typeNameTable[37] = "Hack4Europe.View.GenericActionView";
+            _typeNameTable[38] = "Hack4Europe.ViewModel.HomeViewModel";
+            _typeNameTable[39] = "Hack4Europe.View.HomeView";
+            _typeNameTable[40] = "Hack4Europe.View.ScenariosView";
+            _typeNameTable[41] = "Hack4Europe.ViewModel.SettingsViewModel";
+            _typeNameTable[42] = "Hack4Europe.View.SettingsView";
+            _typeNameTable[43] = "Hack4Europe.ViewModel.SignInViewModel";
+            _typeNameTable[44] = "Hack4Europe.View.SignInView";
+            _typeNameTable[45] = "Hack4Europe.View.VoiceRecognitionView";
 
-            _typeTable = new global::System.Type[39];
+            _typeTable = new global::System.Type[46];
             _typeTable[0] = typeof(global::Hack4Europe.Utils.DomoItemVisibilityConverters);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Hack4Europe.Utils.ActionCubeNumberVisibilityConverters);
-            _typeTable[3] = typeof(global::Windows.UI.Color);
-            _typeTable[4] = typeof(global::System.ValueType);
-            _typeTable[5] = typeof(global::System.Byte);
-            _typeTable[6] = typeof(global::Hack4Europe.MainPage);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[9] = typeof(global::Hack4Europe.UserControls.ActionCubeControl);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[12] = typeof(global::Hack4Europe.UserControls.ActionCubeControl.ActionType);
-            _typeTable[13] = typeof(global::System.Enum);
-            _typeTable[14] = typeof(global::Hack4Europe.UserControls.BlueLineControl);
-            _typeTable[15] = typeof(global::Hack4Europe.UserControls.DomoItemControl);
-            _typeTable[16] = typeof(global::Hack4Europe.UserControls.MainViewGridControl);
-            _typeTable[17] = typeof(global::Windows.UI.Xaml.Controls.UIElementCollection);
-            _typeTable[18] = typeof(global::Hack4Europe.UserControls.GenericActionControl);
-            _typeTable[19] = typeof(global::Hack4Europe.UserControls.HomePageItemControl);
-            _typeTable[20] = typeof(global::Hack4Europe.UserControls.HomePageItemControl.HomePageItemType);
-            _typeTable[21] = typeof(global::Hack4Europe.ViewModel.MainViewGridViewModel);
-            _typeTable[22] = typeof(global::Hack4Europe.ViewModel.CommonViewModel);
-            _typeTable[23] = typeof(global::Hack4Europe.ViewModel.ViewModelBase);
-            _typeTable[24] = typeof(global::System.Boolean);
-            _typeTable[25] = typeof(global::Hack4Europe.View.ActionsView);
-            _typeTable[26] = typeof(global::Hack4Europe.View.CompatibilityView);
-            _typeTable[27] = typeof(global::Hack4Europe.ViewModel.FirstViewViewModel);
-            _typeTable[28] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[29] = typeof(global::Hack4Europe.View.FirstPageView);
-            _typeTable[30] = typeof(global::Hack4Europe.View.GenericActionView);
-            _typeTable[31] = typeof(global::Hack4Europe.ViewModel.HomeViewModel);
-            _typeTable[32] = typeof(global::Hack4Europe.View.HomeView);
-            _typeTable[33] = typeof(global::Hack4Europe.View.ScenariosView);
-            _typeTable[34] = typeof(global::Hack4Europe.ViewModel.SettingsViewModel);
-            _typeTable[35] = typeof(global::Hack4Europe.View.SettingsView);
-            _typeTable[36] = typeof(global::Hack4Europe.ViewModel.SignInViewModel);
-            _typeTable[37] = typeof(global::Hack4Europe.View.SignInView);
-            _typeTable[38] = typeof(global::Hack4Europe.View.VoiceRecognitionView);
+            _typeTable[3] = typeof(global::Hack4Europe.Utils.BoolToVisibilityConverters);
+            _typeTable[4] = typeof(global::Windows.UI.Color);
+            _typeTable[5] = typeof(global::System.ValueType);
+            _typeTable[6] = typeof(global::System.Byte);
+            _typeTable[7] = typeof(global::Hack4Europe.MainPage);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[10] = typeof(global::Hack4Europe.UserControls.ActionCubeControl);
+            _typeTable[11] = typeof(global::System.String);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[13] = typeof(global::Hack4Europe.UserControls.ActionCubeControl.ActionType);
+            _typeTable[14] = typeof(global::System.Enum);
+            _typeTable[15] = typeof(global::Hack4Europe.UserControls.BlueLineControl);
+            _typeTable[16] = typeof(global::Hack4Europe.UserControls.DomoItemControl);
+            _typeTable[17] = typeof(global::Hack4Europe.UserControls.MainViewGridControl);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.UIElementCollection);
+            _typeTable[19] = typeof(global::Hack4Europe.UserControls.GenericActionControl);
+            _typeTable[20] = typeof(global::Hack4Europe.UserControls.HomePageItemControl);
+            _typeTable[21] = typeof(global::Hack4Europe.UserControls.HomePageItemControl.HomePageItemType);
+            _typeTable[22] = typeof(global::Hack4Europe.UserControls.ScenarioGroupControl);
+            _typeTable[23] = typeof(global::System.Boolean);
+            _typeTable[24] = typeof(global::Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum);
+            _typeTable[25] = typeof(global::Hack4Europe.ViewModel.MainViewGridViewModel);
+            _typeTable[26] = typeof(global::Hack4Europe.ViewModel.CommonViewModel);
+            _typeTable[27] = typeof(global::Hack4Europe.ViewModel.ViewModelBase);
+            _typeTable[28] = typeof(global::Hack4Europe.UserControls.DomoItemControl.DomoItemType);
+            _typeTable[29] = typeof(global::Hack4Europe.View.ActionsView);
+            _typeTable[30] = typeof(global::Hack4Europe.View.CompatibilityView);
+            _typeTable[31] = typeof(global::Hack4Europe.View.CreateActionView);
+            _typeTable[32] = typeof(global::Hack4Europe.View.CreateScenarioView);
+            _typeTable[33] = typeof(global::Hack4Europe.View.CreateTriggerView);
+            _typeTable[34] = typeof(global::Hack4Europe.ViewModel.FirstViewViewModel);
+            _typeTable[35] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[36] = typeof(global::Hack4Europe.View.FirstPageView);
+            _typeTable[37] = typeof(global::Hack4Europe.View.GenericActionView);
+            _typeTable[38] = typeof(global::Hack4Europe.ViewModel.HomeViewModel);
+            _typeTable[39] = typeof(global::Hack4Europe.View.HomeView);
+            _typeTable[40] = typeof(global::Hack4Europe.View.ScenariosView);
+            _typeTable[41] = typeof(global::Hack4Europe.ViewModel.SettingsViewModel);
+            _typeTable[42] = typeof(global::Hack4Europe.View.SettingsView);
+            _typeTable[43] = typeof(global::Hack4Europe.ViewModel.SignInViewModel);
+            _typeTable[44] = typeof(global::Hack4Europe.View.SignInView);
+            _typeTable[45] = typeof(global::Hack4Europe.View.VoiceRecognitionView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -241,28 +255,33 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
 
         private object Activate_0_DomoItemVisibilityConverters() { return new global::Hack4Europe.Utils.DomoItemVisibilityConverters(); }
         private object Activate_2_ActionCubeNumberVisibilityConverters() { return new global::Hack4Europe.Utils.ActionCubeNumberVisibilityConverters(); }
-        private object Activate_6_MainPage() { return new global::Hack4Europe.MainPage(); }
-        private object Activate_9_ActionCubeControl() { return new global::Hack4Europe.UserControls.ActionCubeControl(); }
-        private object Activate_14_BlueLineControl() { return new global::Hack4Europe.UserControls.BlueLineControl(); }
-        private object Activate_15_DomoItemControl() { return new global::Hack4Europe.UserControls.DomoItemControl(); }
-        private object Activate_16_MainViewGridControl() { return new global::Hack4Europe.UserControls.MainViewGridControl(); }
-        private object Activate_18_GenericActionControl() { return new global::Hack4Europe.UserControls.GenericActionControl(); }
-        private object Activate_19_HomePageItemControl() { return new global::Hack4Europe.UserControls.HomePageItemControl(); }
-        private object Activate_21_MainViewGridViewModel() { return new global::Hack4Europe.ViewModel.MainViewGridViewModel(); }
-        private object Activate_22_CommonViewModel() { return new global::Hack4Europe.ViewModel.CommonViewModel(); }
-        private object Activate_25_ActionsView() { return new global::Hack4Europe.View.ActionsView(); }
-        private object Activate_26_CompatibilityView() { return new global::Hack4Europe.View.CompatibilityView(); }
-        private object Activate_27_FirstViewViewModel() { return new global::Hack4Europe.ViewModel.FirstViewViewModel(); }
-        private object Activate_29_FirstPageView() { return new global::Hack4Europe.View.FirstPageView(); }
-        private object Activate_30_GenericActionView() { return new global::Hack4Europe.View.GenericActionView(); }
-        private object Activate_31_HomeViewModel() { return new global::Hack4Europe.ViewModel.HomeViewModel(); }
-        private object Activate_32_HomeView() { return new global::Hack4Europe.View.HomeView(); }
-        private object Activate_33_ScenariosView() { return new global::Hack4Europe.View.ScenariosView(); }
-        private object Activate_34_SettingsViewModel() { return new global::Hack4Europe.ViewModel.SettingsViewModel(); }
-        private object Activate_35_SettingsView() { return new global::Hack4Europe.View.SettingsView(); }
-        private object Activate_36_SignInViewModel() { return new global::Hack4Europe.ViewModel.SignInViewModel(); }
-        private object Activate_37_SignInView() { return new global::Hack4Europe.View.SignInView(); }
-        private object Activate_38_VoiceRecognitionView() { return new global::Hack4Europe.View.VoiceRecognitionView(); }
+        private object Activate_3_BoolToVisibilityConverters() { return new global::Hack4Europe.Utils.BoolToVisibilityConverters(); }
+        private object Activate_7_MainPage() { return new global::Hack4Europe.MainPage(); }
+        private object Activate_10_ActionCubeControl() { return new global::Hack4Europe.UserControls.ActionCubeControl(); }
+        private object Activate_15_BlueLineControl() { return new global::Hack4Europe.UserControls.BlueLineControl(); }
+        private object Activate_16_DomoItemControl() { return new global::Hack4Europe.UserControls.DomoItemControl(); }
+        private object Activate_17_MainViewGridControl() { return new global::Hack4Europe.UserControls.MainViewGridControl(); }
+        private object Activate_19_GenericActionControl() { return new global::Hack4Europe.UserControls.GenericActionControl(); }
+        private object Activate_20_HomePageItemControl() { return new global::Hack4Europe.UserControls.HomePageItemControl(); }
+        private object Activate_22_ScenarioGroupControl() { return new global::Hack4Europe.UserControls.ScenarioGroupControl(); }
+        private object Activate_25_MainViewGridViewModel() { return new global::Hack4Europe.ViewModel.MainViewGridViewModel(); }
+        private object Activate_26_CommonViewModel() { return new global::Hack4Europe.ViewModel.CommonViewModel(); }
+        private object Activate_29_ActionsView() { return new global::Hack4Europe.View.ActionsView(); }
+        private object Activate_30_CompatibilityView() { return new global::Hack4Europe.View.CompatibilityView(); }
+        private object Activate_31_CreateActionView() { return new global::Hack4Europe.View.CreateActionView(); }
+        private object Activate_32_CreateScenarioView() { return new global::Hack4Europe.View.CreateScenarioView(); }
+        private object Activate_33_CreateTriggerView() { return new global::Hack4Europe.View.CreateTriggerView(); }
+        private object Activate_34_FirstViewViewModel() { return new global::Hack4Europe.ViewModel.FirstViewViewModel(); }
+        private object Activate_36_FirstPageView() { return new global::Hack4Europe.View.FirstPageView(); }
+        private object Activate_37_GenericActionView() { return new global::Hack4Europe.View.GenericActionView(); }
+        private object Activate_38_HomeViewModel() { return new global::Hack4Europe.ViewModel.HomeViewModel(); }
+        private object Activate_39_HomeView() { return new global::Hack4Europe.View.HomeView(); }
+        private object Activate_40_ScenariosView() { return new global::Hack4Europe.View.ScenariosView(); }
+        private object Activate_41_SettingsViewModel() { return new global::Hack4Europe.ViewModel.SettingsViewModel(); }
+        private object Activate_42_SettingsView() { return new global::Hack4Europe.View.SettingsView(); }
+        private object Activate_43_SignInViewModel() { return new global::Hack4Europe.ViewModel.SignInViewModel(); }
+        private object Activate_44_SignInView() { return new global::Hack4Europe.View.SignInView(); }
+        private object Activate_45_VoiceRecognitionView() { return new global::Hack4Europe.View.VoiceRecognitionView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -292,7 +311,14 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 3:   //  Windows.UI.Color
+            case 3:   //  Hack4Europe.Utils.BoolToVisibilityConverters
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_3_BoolToVisibilityConverters;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Windows.UI.Color
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -301,35 +327,35 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  System.ValueType
+            case 5:   //  System.ValueType
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 5:   //  Byte
+            case 6:   //  Byte
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Hack4Europe.MainPage
+            case 7:   //  Hack4Europe.MainPage
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_7_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.Page
+            case 8:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+            case 9:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Hack4Europe.UserControls.ActionCubeControl
+            case 10:   //  Hack4Europe.UserControls.ActionCubeControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_9_ActionCubeControl;
+                userType.Activator = Activate_10_ActionCubeControl;
                 userType.AddMemberName("IconCube");
                 userType.AddMemberName("NumberCube");
                 userType.AddMemberName("TitleCube");
@@ -339,15 +365,15 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 11:   //  String
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Media.SolidColorBrush
+            case 12:   //  Windows.UI.Xaml.Media.SolidColorBrush
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Hack4Europe.UserControls.ActionCubeControl.ActionType
+            case 13:   //  Hack4Europe.UserControls.ActionCubeControl.ActionType
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Temperature", global::Hack4Europe.UserControls.ActionCubeControl.ActionType.Temperature);
                 userType.AddEnumValue("Lights", global::Hack4Europe.UserControls.ActionCubeControl.ActionType.Lights);
@@ -361,28 +387,28 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Enum
+            case 14:   //  System.Enum
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 14:   //  Hack4Europe.UserControls.BlueLineControl
+            case 15:   //  Hack4Europe.UserControls.BlueLineControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_14_BlueLineControl;
+                userType.Activator = Activate_15_BlueLineControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Hack4Europe.UserControls.DomoItemControl
+            case 16:   //  Hack4Europe.UserControls.DomoItemControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_15_DomoItemControl;
+                userType.Activator = Activate_16_DomoItemControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Hack4Europe.UserControls.MainViewGridControl
+            case 17:   //  Hack4Europe.UserControls.MainViewGridControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_16_MainViewGridControl;
+                userType.Activator = Activate_17_MainViewGridControl;
                 userType.AddMemberName("TopIconLogoUri");
                 userType.AddMemberName("TopImageUri");
                 userType.AddMemberName("TopTitle");
@@ -391,20 +417,20 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  Windows.UI.Xaml.Controls.UIElementCollection
+            case 18:   //  Windows.UI.Xaml.Controls.UIElementCollection
                 xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  Hack4Europe.UserControls.GenericActionControl
+            case 19:   //  Hack4Europe.UserControls.GenericActionControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_18_GenericActionControl;
+                userType.Activator = Activate_19_GenericActionControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Hack4Europe.UserControls.HomePageItemControl
+            case 20:   //  Hack4Europe.UserControls.HomePageItemControl
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_19_HomePageItemControl;
+                userType.Activator = Activate_20_HomePageItemControl;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("Type");
@@ -412,7 +438,7 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  Hack4Europe.UserControls.HomePageItemControl.HomePageItemType
+            case 21:   //  Hack4Europe.UserControls.HomePageItemControl.HomePageItemType
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Scenarios", global::Hack4Europe.UserControls.HomePageItemControl.HomePageItemType.Scenarios);
                 userType.AddEnumValue("Actions", global::Hack4Europe.UserControls.HomePageItemControl.HomePageItemType.Actions);
@@ -422,51 +448,108 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  Hack4Europe.ViewModel.MainViewGridViewModel
-                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel"));
-                userType.Activator = Activate_21_MainViewGridViewModel;
+            case 22:   //  Hack4Europe.UserControls.ScenarioGroupControl
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_22_ScenarioGroupControl;
+                userType.AddMemberName("IsAddActive");
+                userType.AddMemberName("HeaderTitle");
+                userType.AddMemberName("HeaderColorBrush");
+                userType.AddMemberName("Children");
+                userType.AddMemberName("ScenarioGroupType");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Hack4Europe.ViewModel.CommonViewModel
+            case 23:   //  Boolean
+                xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 24:   //  Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Trigger", global::Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum.Trigger);
+                userType.AddEnumValue("Action", global::Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum.Action);
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  Hack4Europe.ViewModel.MainViewGridViewModel
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel"));
+                userType.Activator = Activate_25_MainViewGridViewModel;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 26:   //  Hack4Europe.ViewModel.CommonViewModel
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_22_CommonViewModel;
+                userType.Activator = Activate_26_CommonViewModel;
                 userType.AddMemberName("TopIconLogoUri");
                 userType.AddMemberName("TopImageUri");
                 userType.AddMemberName("TopTitle");
+                userType.AddMemberName("Type");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Hack4Europe.ViewModel.ViewModelBase
+            case 27:   //  Hack4Europe.ViewModel.ViewModelBase
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("WsOver");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Boolean
-                xamlType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 25:   //  Hack4Europe.View.ActionsView
-                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_ActionsView;
+            case 28:   //  Hack4Europe.UserControls.DomoItemControl.DomoItemType
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Temperature", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Temperature);
+                userType.AddEnumValue("Heating", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Heating);
+                userType.AddEnumValue("Cooling", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Cooling);
+                userType.AddEnumValue("Safety", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Safety);
+                userType.AddEnumValue("WallSocket", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.WallSocket);
+                userType.AddEnumValue("Sensor", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Sensor);
+                userType.AddEnumValue("Light", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Light);
+                userType.AddEnumValue("Lamp", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Lamp);
+                userType.AddEnumValue("Scenario", global::Hack4Europe.UserControls.DomoItemControl.DomoItemType.Scenario);
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Hack4Europe.View.CompatibilityView
+            case 29:   //  Hack4Europe.View.ActionsView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_CompatibilityView;
+                userType.Activator = Activate_29_ActionsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Hack4Europe.ViewModel.FirstViewViewModel
+            case 30:   //  Hack4Europe.View.CompatibilityView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_CompatibilityView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  Hack4Europe.View.CreateActionView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_31_CreateActionView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 32:   //  Hack4Europe.View.CreateScenarioView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_32_CreateScenarioView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  Hack4Europe.View.CreateTriggerView
+                userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_33_CreateTriggerView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Hack4Europe.ViewModel.FirstViewViewModel
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_27_FirstViewViewModel;
+                userType.Activator = Activate_34_FirstViewViewModel;
                 userType.AddMemberName("OnClickCommand");
                 userType.AddMemberName("Login");
                 userType.AddMemberName("Password1");
@@ -475,66 +558,66 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  System.Windows.Input.ICommand
+            case 35:   //  System.Windows.Input.ICommand
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Hack4Europe.View.FirstPageView
+            case 36:   //  Hack4Europe.View.FirstPageView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_FirstPageView;
+                userType.Activator = Activate_36_FirstPageView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Hack4Europe.View.GenericActionView
+            case 37:   //  Hack4Europe.View.GenericActionView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_GenericActionView;
+                userType.Activator = Activate_37_GenericActionView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Hack4Europe.ViewModel.HomeViewModel
+            case 38:   //  Hack4Europe.ViewModel.HomeViewModel
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_31_HomeViewModel;
+                userType.Activator = Activate_38_HomeViewModel;
                 userType.AddMemberName("VoiceCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Hack4Europe.View.HomeView
+            case 39:   //  Hack4Europe.View.HomeView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_HomeView;
+                userType.Activator = Activate_39_HomeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Hack4Europe.View.ScenariosView
+            case 40:   //  Hack4Europe.View.ScenariosView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_ScenariosView;
+                userType.Activator = Activate_40_ScenariosView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Hack4Europe.ViewModel.SettingsViewModel
+            case 41:   //  Hack4Europe.ViewModel.SettingsViewModel
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_34_SettingsViewModel;
+                userType.Activator = Activate_41_SettingsViewModel;
                 userType.AddMemberName("ItemClickCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 35:   //  Hack4Europe.View.SettingsView
+            case 42:   //  Hack4Europe.View.SettingsView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_SettingsView;
+                userType.Activator = Activate_42_SettingsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Hack4Europe.ViewModel.SignInViewModel
+            case 43:   //  Hack4Europe.ViewModel.SignInViewModel
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_36_SignInViewModel;
+                userType.Activator = Activate_43_SignInViewModel;
                 userType.AddMemberName("OnClickCommand");
                 userType.AddMemberName("Login");
                 userType.AddMemberName("Password");
@@ -542,16 +625,16 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Hack4Europe.View.SignInView
+            case 44:   //  Hack4Europe.View.SignInView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_SignInView;
+                userType.Activator = Activate_44_SignInView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Hack4Europe.View.VoiceRecognitionView
+            case 45:   //  Hack4Europe.View.VoiceRecognitionView
                 userType = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_VoiceRecognitionView;
+                userType.Activator = Activate_45_VoiceRecognitionView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -720,132 +803,192 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
             var that = (global::Hack4Europe.UserControls.HomePageItemControl)instance;
             that.Type = (global::Hack4Europe.UserControls.HomePageItemControl.HomePageItemType)Value;
         }
-        private object get_16_CommonViewModel_TopIconLogoUri(object instance)
+        private object get_16_ScenarioGroupControl_IsAddActive(object instance)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            return that.IsAddActive;
+        }
+        private void set_16_ScenarioGroupControl_IsAddActive(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            that.IsAddActive = (global::System.Boolean)Value;
+        }
+        private object get_17_ScenarioGroupControl_HeaderTitle(object instance)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            return that.HeaderTitle;
+        }
+        private void set_17_ScenarioGroupControl_HeaderTitle(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            that.HeaderTitle = (global::System.String)Value;
+        }
+        private object get_18_ScenarioGroupControl_HeaderColorBrush(object instance)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            return that.HeaderColorBrush;
+        }
+        private void set_18_ScenarioGroupControl_HeaderColorBrush(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            that.HeaderColorBrush = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
+        }
+        private object get_19_ScenarioGroupControl_Children(object instance)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            return that.Children;
+        }
+        private void set_19_ScenarioGroupControl_Children(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            that.Children = (global::Windows.UI.Xaml.Controls.UIElementCollection)Value;
+        }
+        private object get_20_ScenarioGroupControl_ScenarioGroupType(object instance)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            return that.ScenarioGroupType;
+        }
+        private void set_20_ScenarioGroupControl_ScenarioGroupType(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.UserControls.ScenarioGroupControl)instance;
+            that.ScenarioGroupType = (global::Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum)Value;
+        }
+        private object get_21_CommonViewModel_TopIconLogoUri(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             return that.TopIconLogoUri;
         }
-        private void set_16_CommonViewModel_TopIconLogoUri(object instance, object Value)
+        private void set_21_CommonViewModel_TopIconLogoUri(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             that.TopIconLogoUri = (global::System.String)Value;
         }
-        private object get_17_CommonViewModel_TopImageUri(object instance)
+        private object get_22_CommonViewModel_TopImageUri(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             return that.TopImageUri;
         }
-        private void set_17_CommonViewModel_TopImageUri(object instance, object Value)
+        private void set_22_CommonViewModel_TopImageUri(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             that.TopImageUri = (global::System.String)Value;
         }
-        private object get_18_CommonViewModel_TopTitle(object instance)
+        private object get_23_CommonViewModel_TopTitle(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             return that.TopTitle;
         }
-        private void set_18_CommonViewModel_TopTitle(object instance, object Value)
+        private void set_23_CommonViewModel_TopTitle(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
             that.TopTitle = (global::System.String)Value;
         }
-        private object get_19_ViewModelBase_WsOver(object instance)
+        private object get_24_CommonViewModel_Type(object instance)
+        {
+            var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
+            return that.Type;
+        }
+        private void set_24_CommonViewModel_Type(object instance, object Value)
+        {
+            var that = (global::Hack4Europe.ViewModel.CommonViewModel)instance;
+            that.Type = (global::Hack4Europe.UserControls.DomoItemControl.DomoItemType)Value;
+        }
+        private object get_25_ViewModelBase_WsOver(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.ViewModelBase)instance;
             return that.WsOver;
         }
-        private void set_19_ViewModelBase_WsOver(object instance, object Value)
+        private void set_25_ViewModelBase_WsOver(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.ViewModelBase)instance;
             that.WsOver = (global::System.Boolean)Value;
         }
-        private object get_20_FirstViewViewModel_OnClickCommand(object instance)
+        private object get_26_FirstViewViewModel_OnClickCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             return that.OnClickCommand;
         }
-        private void set_20_FirstViewViewModel_OnClickCommand(object instance, object Value)
+        private void set_26_FirstViewViewModel_OnClickCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             that.OnClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_21_FirstViewViewModel_Login(object instance)
+        private object get_27_FirstViewViewModel_Login(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             return that.Login;
         }
-        private void set_21_FirstViewViewModel_Login(object instance, object Value)
+        private void set_27_FirstViewViewModel_Login(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             that.Login = (global::System.String)Value;
         }
-        private object get_22_FirstViewViewModel_Password1(object instance)
+        private object get_28_FirstViewViewModel_Password1(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             return that.Password1;
         }
-        private void set_22_FirstViewViewModel_Password1(object instance, object Value)
+        private void set_28_FirstViewViewModel_Password1(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             that.Password1 = (global::System.String)Value;
         }
-        private object get_23_FirstViewViewModel_Password2(object instance)
+        private object get_29_FirstViewViewModel_Password2(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             return that.Password2;
         }
-        private void set_23_FirstViewViewModel_Password2(object instance, object Value)
+        private void set_29_FirstViewViewModel_Password2(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.FirstViewViewModel)instance;
             that.Password2 = (global::System.String)Value;
         }
-        private object get_24_HomeViewModel_VoiceCommand(object instance)
+        private object get_30_HomeViewModel_VoiceCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
             return that.VoiceCommand;
         }
-        private void set_24_HomeViewModel_VoiceCommand(object instance, object Value)
+        private void set_30_HomeViewModel_VoiceCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.HomeViewModel)instance;
             that.VoiceCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_25_SettingsViewModel_ItemClickCommand(object instance)
+        private object get_31_SettingsViewModel_ItemClickCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SettingsViewModel)instance;
             return that.ItemClickCommand;
         }
-        private void set_25_SettingsViewModel_ItemClickCommand(object instance, object Value)
+        private void set_31_SettingsViewModel_ItemClickCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SettingsViewModel)instance;
             that.ItemClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_26_SignInViewModel_OnClickCommand(object instance)
+        private object get_32_SignInViewModel_OnClickCommand(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             return that.OnClickCommand;
         }
-        private void set_26_SignInViewModel_OnClickCommand(object instance, object Value)
+        private void set_32_SignInViewModel_OnClickCommand(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             that.OnClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_27_SignInViewModel_Login(object instance)
+        private object get_33_SignInViewModel_Login(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             return that.Login;
         }
-        private void set_27_SignInViewModel_Login(object instance, object Value)
+        private void set_33_SignInViewModel_Login(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             that.Login = (global::System.String)Value;
         }
-        private object get_28_SignInViewModel_Password(object instance)
+        private object get_34_SignInViewModel_Password(object instance)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             return that.Password;
         }
-        private void set_28_SignInViewModel_Password(object instance, object Value)
+        private void set_34_SignInViewModel_Password(object instance, object Value)
         {
             var that = (global::Hack4Europe.ViewModel.SignInViewModel)instance;
             that.Password = (global::System.String)Value;
@@ -965,83 +1108,124 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_15_HomePageItemControl_Type;
                 xamlMember.Setter = set_15_HomePageItemControl_Type;
                 break;
+            case "Hack4Europe.UserControls.ScenarioGroupControl.IsAddActive":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.UserControls.ScenarioGroupControl");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsAddActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_16_ScenarioGroupControl_IsAddActive;
+                xamlMember.Setter = set_16_ScenarioGroupControl_IsAddActive;
+                break;
+            case "Hack4Europe.UserControls.ScenarioGroupControl.HeaderTitle":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.UserControls.ScenarioGroupControl");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "HeaderTitle", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_17_ScenarioGroupControl_HeaderTitle;
+                xamlMember.Setter = set_17_ScenarioGroupControl_HeaderTitle;
+                break;
+            case "Hack4Europe.UserControls.ScenarioGroupControl.HeaderColorBrush":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.UserControls.ScenarioGroupControl");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "HeaderColorBrush", "Windows.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_18_ScenarioGroupControl_HeaderColorBrush;
+                xamlMember.Setter = set_18_ScenarioGroupControl_HeaderColorBrush;
+                break;
+            case "Hack4Europe.UserControls.ScenarioGroupControl.Children":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.UserControls.ScenarioGroupControl");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Children", "Windows.UI.Xaml.Controls.UIElementCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_19_ScenarioGroupControl_Children;
+                xamlMember.Setter = set_19_ScenarioGroupControl_Children;
+                break;
+            case "Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupType":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.UserControls.ScenarioGroupControl");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "ScenarioGroupType", "Hack4Europe.UserControls.ScenarioGroupControl.ScenarioGroupeTypEnum");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_20_ScenarioGroupControl_ScenarioGroupType;
+                xamlMember.Setter = set_20_ScenarioGroupControl_ScenarioGroupType;
+                break;
             case "Hack4Europe.ViewModel.CommonViewModel.TopIconLogoUri":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "TopIconLogoUri", "String");
-                xamlMember.Getter = get_16_CommonViewModel_TopIconLogoUri;
-                xamlMember.Setter = set_16_CommonViewModel_TopIconLogoUri;
+                xamlMember.Getter = get_21_CommonViewModel_TopIconLogoUri;
+                xamlMember.Setter = set_21_CommonViewModel_TopIconLogoUri;
                 break;
             case "Hack4Europe.ViewModel.CommonViewModel.TopImageUri":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "TopImageUri", "String");
-                xamlMember.Getter = get_17_CommonViewModel_TopImageUri;
-                xamlMember.Setter = set_17_CommonViewModel_TopImageUri;
+                xamlMember.Getter = get_22_CommonViewModel_TopImageUri;
+                xamlMember.Setter = set_22_CommonViewModel_TopImageUri;
                 break;
             case "Hack4Europe.ViewModel.CommonViewModel.TopTitle":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "TopTitle", "String");
-                xamlMember.Getter = get_18_CommonViewModel_TopTitle;
-                xamlMember.Setter = set_18_CommonViewModel_TopTitle;
+                xamlMember.Getter = get_23_CommonViewModel_TopTitle;
+                xamlMember.Setter = set_23_CommonViewModel_TopTitle;
+                break;
+            case "Hack4Europe.ViewModel.CommonViewModel.Type":
+                userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.CommonViewModel");
+                xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Type", "Hack4Europe.UserControls.DomoItemControl.DomoItemType");
+                xamlMember.Getter = get_24_CommonViewModel_Type;
+                xamlMember.Setter = set_24_CommonViewModel_Type;
                 break;
             case "Hack4Europe.ViewModel.ViewModelBase.WsOver":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.ViewModelBase");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "WsOver", "Boolean");
-                xamlMember.Getter = get_19_ViewModelBase_WsOver;
-                xamlMember.Setter = set_19_ViewModelBase_WsOver;
+                xamlMember.Getter = get_25_ViewModelBase_WsOver;
+                xamlMember.Setter = set_25_ViewModelBase_WsOver;
                 break;
             case "Hack4Europe.ViewModel.FirstViewViewModel.OnClickCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "OnClickCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_20_FirstViewViewModel_OnClickCommand;
-                xamlMember.Setter = set_20_FirstViewViewModel_OnClickCommand;
+                xamlMember.Getter = get_26_FirstViewViewModel_OnClickCommand;
+                xamlMember.Setter = set_26_FirstViewViewModel_OnClickCommand;
                 break;
             case "Hack4Europe.ViewModel.FirstViewViewModel.Login":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Login", "String");
-                xamlMember.Getter = get_21_FirstViewViewModel_Login;
-                xamlMember.Setter = set_21_FirstViewViewModel_Login;
+                xamlMember.Getter = get_27_FirstViewViewModel_Login;
+                xamlMember.Setter = set_27_FirstViewViewModel_Login;
                 break;
             case "Hack4Europe.ViewModel.FirstViewViewModel.Password1":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password1", "String");
-                xamlMember.Getter = get_22_FirstViewViewModel_Password1;
-                xamlMember.Setter = set_22_FirstViewViewModel_Password1;
+                xamlMember.Getter = get_28_FirstViewViewModel_Password1;
+                xamlMember.Setter = set_28_FirstViewViewModel_Password1;
                 break;
             case "Hack4Europe.ViewModel.FirstViewViewModel.Password2":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.FirstViewViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password2", "String");
-                xamlMember.Getter = get_23_FirstViewViewModel_Password2;
-                xamlMember.Setter = set_23_FirstViewViewModel_Password2;
+                xamlMember.Getter = get_29_FirstViewViewModel_Password2;
+                xamlMember.Setter = set_29_FirstViewViewModel_Password2;
                 break;
             case "Hack4Europe.ViewModel.HomeViewModel.VoiceCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.HomeViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "VoiceCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_24_HomeViewModel_VoiceCommand;
-                xamlMember.Setter = set_24_HomeViewModel_VoiceCommand;
+                xamlMember.Getter = get_30_HomeViewModel_VoiceCommand;
+                xamlMember.Setter = set_30_HomeViewModel_VoiceCommand;
                 break;
             case "Hack4Europe.ViewModel.SettingsViewModel.ItemClickCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SettingsViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "ItemClickCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_25_SettingsViewModel_ItemClickCommand;
-                xamlMember.Setter = set_25_SettingsViewModel_ItemClickCommand;
+                xamlMember.Getter = get_31_SettingsViewModel_ItemClickCommand;
+                xamlMember.Setter = set_31_SettingsViewModel_ItemClickCommand;
                 break;
             case "Hack4Europe.ViewModel.SignInViewModel.OnClickCommand":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "OnClickCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_26_SignInViewModel_OnClickCommand;
-                xamlMember.Setter = set_26_SignInViewModel_OnClickCommand;
+                xamlMember.Getter = get_32_SignInViewModel_OnClickCommand;
+                xamlMember.Setter = set_32_SignInViewModel_OnClickCommand;
                 break;
             case "Hack4Europe.ViewModel.SignInViewModel.Login":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Login", "String");
-                xamlMember.Getter = get_27_SignInViewModel_Login;
-                xamlMember.Setter = set_27_SignInViewModel_Login;
+                xamlMember.Getter = get_33_SignInViewModel_Login;
+                xamlMember.Setter = set_33_SignInViewModel_Login;
                 break;
             case "Hack4Europe.ViewModel.SignInViewModel.Password":
                 userType = (global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hack4Europe.ViewModel.SignInViewModel");
                 xamlMember = new global::Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo.XamlMember(this, "Password", "String");
-                xamlMember.Getter = get_28_SignInViewModel_Password;
-                xamlMember.Setter = set_28_SignInViewModel_Password;
+                xamlMember.Getter = get_34_SignInViewModel_Password;
+                xamlMember.Setter = set_34_SignInViewModel_Password;
                 break;
             }
             return xamlMember;
@@ -1368,11 +1552,5 @@ namespace Hack4Europe.Hack4Europe_WindowsPhone_XamlTypeInfo
         }
     }
 }
-
-
-
-
-
-
 
 

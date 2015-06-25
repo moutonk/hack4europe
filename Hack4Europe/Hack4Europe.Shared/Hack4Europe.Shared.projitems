@@ -40,6 +40,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\MainViewGridControl.xaml.cs">
       <DependentUpon>MainViewGridControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\ScenarioGroupControl.xaml.cs">
+      <DependentUpon>ScenarioGroupControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Encrypt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Logs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\NotificationCenter.cs" />
@@ -53,6 +56,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewGridViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ScenarioGroupViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SettingsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SignInViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
@@ -62,6 +66,15 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\CompatibilityView.xaml.cs">
       <DependentUpon>CompatibilityView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\CreateActionView.xaml.cs">
+      <DependentUpon>CreateActionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\CreateScenarioView.xaml.cs">
+      <DependentUpon>CreateScenarioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\CreateTriggerView.xaml.cs">
+      <DependentUpon>CreateTriggerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\FirstPageView.xaml.cs">
       <DependentUpon>FirstPageView.xaml</DependentUpon>
@@ -115,11 +128,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\ScenarioGroupControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)View\ActionsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)View\CompatibilityView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)View\CreateActionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)View\CreateScenarioView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)View\CreateTriggerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

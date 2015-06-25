@@ -44,8 +44,12 @@ UserControls\DomoItemControl.xbf
 UserControls\GenericActionControl.xbf
 UserControls\HomePageItemControl.xbf
 UserControls\MainViewGridControl.xbf
+UserControls\ScenarioGroupControl.xbf
 View\ActionsView.xbf
 View\CompatibilityView.xbf
+View\CreateActionView.xbf
+View\CreateScenarioView.xbf
+View\CreateTriggerView.xbf
 View\FirstPageView.xbf
 View\GenericActionView.xbf
 View\HomeView.xbf

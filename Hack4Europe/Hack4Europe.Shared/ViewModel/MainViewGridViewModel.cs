@@ -1,6 +1,11 @@
-﻿namespace Hack4Europe.ViewModel
+﻿using System.Windows.Input;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Hack4Europe.View;
+
+namespace Hack4Europe.ViewModel
 {
-    class MainViewGridViewModel : CommonViewModel
+    public class MainViewGridViewModel : CommonViewModel
     {
         
     }
