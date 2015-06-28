@@ -19,10 +19,8 @@
                     <Border Height="50" Background="White" VerticalAlignment="Center" Margin="0,0,0,10" >
                         <TextBox BorderThickness="0" Background="White"  PlaceholderText="Name of your scenario (optionnal)" Margin="0,7,0,0"></TextBox>
                     </Border>
-                    <userControls:ScenarioGroupControl HeaderTitle="ACTIONS" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="True">
-                    </userControls:ScenarioGroupControl>
-                    <userControls:ScenarioGroupControl HeaderTitle="TRIGGERS" ScenarioGroupType="Trigger" HeaderColorBrush="{StaticResource ActionLime}" IsAddActive="True">
-                    </userControls:ScenarioGroupControl>
+                    <userControls:ScenarioGroupControl HeaderTitle="TRIGGERS" ScenarioGroupType="Trigger" ScenarioGroupTriggerType="None" HeaderColorBrush="{StaticResource ActionLime}" IsAddActive="True"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="ACTIONS" ScenarioGroupType="Action" ScenarioGroupTriggerType="None" HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="True"/>
                 </StackPanel>
             </ScrollViewer>
         </userControls:MainViewGridControl.Children>

@@ -17,6 +17,14 @@ namespace Hack4Europe.UserControls
             Action
         }
 
+        public enum ScenarioGroupeTriggerEnum
+        {
+            Type,
+            Details,
+            Value,
+            None
+        }
+
         #region dp
 
         public bool IsAddActive
@@ -73,6 +81,16 @@ namespace Hack4Europe.UserControls
         public static readonly DependencyProperty ScenarioGroupDomoItemTypeProperty = DependencyProperty.Register(
         "ScenarioGroupDomoItemType", typeof(DomoItemControl.DomoItemType), typeof(ScenarioGroupControl), new PropertyMetadata(DomoItemControl.DomoItemType.None));
 
+        public ScenarioGroupeTriggerEnum ScenarioGroupTriggerType
+
+        {
+            get { return (ScenarioGroupeTriggerEnum)GetValue(ScenarioGroupTriggerTypeProperty); }
+            set { SetValue(ScenarioGroupTriggerTypeProperty, value); }
+        }
+
+        public static readonly DependencyProperty ScenarioGroupTriggerTypeProperty = DependencyProperty.Register(
+        "ScenarioGroupTriggerType", typeof(ScenarioGroupeTriggerEnum), typeof(ScenarioGroupControl), new PropertyMetadata(ScenarioGroupeTriggerEnum.None));
+
         #endregion dp
 
         public ScenarioGroupControl()
@@ -84,7 +102,7 @@ namespace Hack4Europe.UserControls
         {
             try
             {
-                DataContext = new ScenarioGroupViewModel(ScenarioGroupType, ScenarioGroupDomoItemType);
+                DataContext = new ScenarioGroupViewModel(ScenarioGroupType, ScenarioGroupDomoItemType, ScenarioGroupTriggerType);
                 (this.DataContext as ScenarioGroupViewModel).HeaderTitle = HeaderTitle;
                 (this.DataContext as ScenarioGroupViewModel).HeaderColor = HeaderColorBrush;
                 (this.DataContext as ScenarioGroupViewModel).IsAddActive = IsAddActive;

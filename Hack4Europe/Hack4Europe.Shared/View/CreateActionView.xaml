@@ -16,7 +16,7 @@
         <userControls:MainViewGridControl.Children>
             <ScrollViewer>
                 <StackPanel Orientation="Vertical">
-                    <userControls:ScenarioGroupControl HeaderTitle="Security" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="False" ScenarioGroupDomoItemType="Safety"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Security" ScenarioGroupType="Action"  HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="False" ScenarioGroupDomoItemType="Safety"/>
                     <userControls:ScenarioGroupControl HeaderTitle="Lamps" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionLime}" IsAddActive="False" ScenarioGroupDomoItemType="Lamp"/>
                     <userControls:ScenarioGroupControl HeaderTitle="Air conditionning" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionGreen}" IsAddActive="False" ScenarioGroupDomoItemType="Cooling"/>
                     <userControls:ScenarioGroupControl HeaderTitle="Heaters" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionLightGrey}" IsAddActive="False" ScenarioGroupDomoItemType="Heating"/>

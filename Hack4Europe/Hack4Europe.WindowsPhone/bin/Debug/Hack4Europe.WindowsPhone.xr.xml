@@ -300,6 +300,7 @@
       <RootProperty Name="HeaderColorBrush" />
       <RootProperty Name="IsAddActive" />
       <RootProperty Name="ScenarioGroupDomoItemType" />
+      <RootProperty Name="ScenarioGroupTriggerType" />
     </RootType>
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Hack4Europe.View.ActionsView" />

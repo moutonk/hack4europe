@@ -89,7 +89,7 @@ namespace Hack4Europe.Utils
 
                 case DomoItemControl.DomoItemType.Scenario:
                     return Visibility.Collapsed;
-                
+
                 default:
                     return Visibility.Visible;
             }

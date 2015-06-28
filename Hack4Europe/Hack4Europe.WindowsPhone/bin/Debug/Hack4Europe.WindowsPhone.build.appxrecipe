@@ -52,6 +52,9 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Air Conditioner-100.png">
       <PackagePath>CommonAssets\Icons\Air Conditioner-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Clock-100.png">
+      <PackagePath>CommonAssets\Icons\Clock-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Electrical Sensor-100.png">
       <PackagePath>CommonAssets\Icons\Electrical Sensor-100.png</PackagePath>
     </AppxPackagedFile>
@@ -60,6 +63,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Electricity-100_thin.png">
       <PackagePath>CommonAssets\Icons\Electricity-100_thin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Equal Sign Filled-100.png">
+      <PackagePath>CommonAssets\Icons\Equal Sign Filled-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Heating Room Filled-100.png">
       <PackagePath>CommonAssets\Icons\Heating Room Filled-100.png</PackagePath>
@@ -76,6 +82,9 @@
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lamp-100.png">
       <PackagePath>CommonAssets\Icons\Lamp-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Less Then Filled-100.png">
+      <PackagePath>CommonAssets\Icons\Less Then Filled-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Lock 2-100_grey.png">
       <PackagePath>CommonAssets\Icons\Lock 2-100_grey.png</PackagePath>
     </AppxPackagedFile>
@@ -87,6 +96,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Microphone-100.png">
       <PackagePath>CommonAssets\Icons\Microphone-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\More Than Filled-100.png">
+      <PackagePath>CommonAssets\Icons\More Than Filled-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Motion Detector-100.png">
       <PackagePath>CommonAssets\Icons\Motion Detector-100.png</PackagePath>
@@ -120,6 +132,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Wall Socket-100.png">
       <PackagePath>CommonAssets\Icons\Wall Socket-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Wet-100.png">
+      <PackagePath>CommonAssets\Icons\Wet-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mouton_k\Documents\GitHub\Hack4Europe\Hack4Europe\Hack4Europe.Shared\CommonAssets\Icons\Winter-100_fat.png">
       <PackagePath>CommonAssets\Icons\Winter-100_fat.png</PackagePath>

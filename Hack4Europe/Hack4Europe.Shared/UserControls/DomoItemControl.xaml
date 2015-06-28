@@ -379,7 +379,7 @@
             <Image Name="Icon" Margin="10" Stretch="Uniform" Source="{Binding Icon.Uri, Mode=TwoWay}" Tapped="Icon_OnTapped"></Image>
         </Grid>
         <Grid Grid.Column="1" Background="WhiteSmoke">
-            <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="10,10,10,10">
                 <TextBlock Name="DescriptionTextBlock" Margin="0,0,10,0" FontSize="15" Foreground="{StaticResource ActionLightGrey}" Text="{Binding TextDescription, Mode=TwoWay}" TextWrapping="Wrap"></TextBlock>
                 <Grid VerticalAlignment="Center" Name="SliderGrid" Visibility="{Binding Type, Converter={StaticResource DomoItemVisibilityConverters}}">
                     <Grid.ColumnDefinitions>

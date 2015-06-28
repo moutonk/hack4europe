@@ -184,18 +184,22 @@
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Activity Grid 2-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Air Conditioner-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Clock-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electrical Sensor-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electricity-100_fat.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Electricity-100_thin.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Equal Sign Filled-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Heating Room Filled-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Heating Room-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Idea-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\IdeaOn-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lamp-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Less Then Filled-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock 2-100_grey.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock 2-100_white.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Lock-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Microphone-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\More Than Filled-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Motion Detector-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\New Post-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Overview Pages 2-100.png" />
@@ -207,6 +211,7 @@
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Temperature Filled-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Unlock-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Wall Socket-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Wet-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_fat.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Icons\Winter-100_thin.png" />
     <Content Include="$(MSBuildThisFileDirectory)CommonAssets\Images\homepage_img_small.jpg" />

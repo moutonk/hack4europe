@@ -13,8 +13,13 @@
             <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
         </userControls:MainViewGridControl.DataContext>
         <userControls:MainViewGridControl.Children>
-            <StackPanel Orientation="Vertical">
-            </StackPanel>
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical">
+                    <userControls:ScenarioGroupControl HeaderTitle="TYPE OF TRIGGER" ScenarioGroupType="Trigger" ScenarioGroupTriggerType="Type" HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="False" ScenarioGroupDomoItemType="None"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="DETAILS" ScenarioGroupType="Trigger" ScenarioGroupTriggerType="Details"  HeaderColorBrush="{StaticResource ActionLime}" IsAddActive="False" ScenarioGroupDomoItemType="None"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="VALUE" ScenarioGroupType="Trigger" ScenarioGroupTriggerType="Value"  HeaderColorBrush="{StaticResource ActionGreen}" IsAddActive="False" ScenarioGroupDomoItemType="None"/>
+                </StackPanel>
+            </ScrollViewer>
         </userControls:MainViewGridControl.Children>
     </userControls:MainViewGridControl>
 </Page>
