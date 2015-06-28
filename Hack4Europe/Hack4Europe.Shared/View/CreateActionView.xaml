@@ -14,8 +14,16 @@
             <viewModel:MainViewGridViewModel></viewModel:MainViewGridViewModel>
         </userControls:MainViewGridControl.DataContext>
         <userControls:MainViewGridControl.Children>
-            <StackPanel Orientation="Vertical">
-            </StackPanel>
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical">
+                    <userControls:ScenarioGroupControl HeaderTitle="Security" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionGold}" IsAddActive="False" ScenarioGroupDomoItemType="Safety"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Lamps" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionLime}" IsAddActive="False" ScenarioGroupDomoItemType="Lamp"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Air conditionning" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionGreen}" IsAddActive="False" ScenarioGroupDomoItemType="Cooling"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Heaters" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionLightGrey}" IsAddActive="False" ScenarioGroupDomoItemType="Heating"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Sensors" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionLightOrange}" IsAddActive="False" ScenarioGroupDomoItemType="Sensor"/>
+                    <userControls:ScenarioGroupControl HeaderTitle="Wall sockets" ScenarioGroupType="Action" HeaderColorBrush="{StaticResource ActionDarkOrange}" IsAddActive="False" ScenarioGroupDomoItemType="WallSocket"/>
+                </StackPanel>
+            </ScrollViewer>
         </userControls:MainViewGridControl.Children>
     </userControls:MainViewGridControl>
 </Page>

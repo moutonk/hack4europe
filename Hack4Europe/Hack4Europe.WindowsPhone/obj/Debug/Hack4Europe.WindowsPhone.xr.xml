@@ -139,6 +139,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Child" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="IsHitTestVisible" />
@@ -278,6 +279,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsSource" />
@@ -292,24 +294,24 @@
       <RootProperty Name="Title" />
       <RootProperty Name="Type" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
     <RootType FullName="Hack4Europe.UserControls.ScenarioGroupControl">
       <RootProperty Name="HeaderTitle" />
       <RootProperty Name="ScenarioGroupType" />
       <RootProperty Name="HeaderColorBrush" />
       <RootProperty Name="IsAddActive" />
+      <RootProperty Name="ScenarioGroupDomoItemType" />
     </RootType>
     <RootType FullName="Hack4Europe.ViewModel.MainViewGridViewModel" />
     <RootType FullName="Hack4Europe.View.ActionsView" />
     <RootType FullName="Hack4Europe.View.CompatibilityView" />
     <RootType FullName="Hack4Europe.View.CreateActionView" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Hack4Europe.View.CreateScenarioView" />

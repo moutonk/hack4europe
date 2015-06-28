@@ -2,16 +2,25 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:userControls="using:Hack4Europe.UserControls"
              mc:Ignorable="d"
              Loaded="ScenarioGroupControl_OnLoaded">
     <StackPanel Orientation="Vertical">
-        <Border Background="{Binding HeaderColor}" Height="25">
-            <TextBlock Margin="7,0,0,0" VerticalAlignment="Center" Text="{Binding HeaderTitle}"/>
+        <Border Background="{Binding HeaderColor}" Height="30">
+            <TextBlock Margin="7,0,0,0" VerticalAlignment="Center" Text="{Binding HeaderTitle}" FontWeight="Bold"/>
         </Border>
         <Button BorderThickness="0" Command="{Binding AddCommand}" Visibility="{Binding IsAddActive, Converter={StaticResource BoolToVisibilityConverters}, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center">
             <Image Source="../CommonAssets/Icons/Plus-100.png"  Margin="0,10,0,10" Height="50" Width="50" HorizontalAlignment="Center"></Image>
         </Button>
-        <ListView></ListView>
+        <ScrollViewer Margin="0,10,0,0">
+            <ItemsControl ItemsSource="{Binding DomoItemsList, Mode=TwoWay}" >
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <userControls:DomoItemControl/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </StackPanel>
 </UserControl>

@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
+using Hack4Europe.Data;
 using Hack4Europe.UserControls;
 using Hack4Europe.View;
 
@@ -54,7 +56,20 @@ namespace Hack4Europe.ViewModel
             }
         }
 
-        public ScenarioGroupViewModel(ScenarioGroupControl.ScenarioGroupeTypEnum ScenarioGroupType)
+        private ObservableCollection<DomoItemControlViewModel> _domoItemsList;
+        public ObservableCollection<DomoItemControlViewModel> DomoItemsList
+        {
+            get
+            {
+                return _domoItemsList;
+            }
+            set
+            {
+                NotifyPropertyChanged(ref _domoItemsList, value);
+            }
+        }
+
+        public ScenarioGroupViewModel(ScenarioGroupControl.ScenarioGroupeTypEnum ScenarioGroupType, DomoItemControl.DomoItemType ScenarioGroupSubType)
         {
             AddCommand = this;
             _rootFrame = (Frame)Window.Current.Content;
@@ -67,6 +82,41 @@ namespace Hack4Europe.ViewModel
 
                 case ScenarioGroupControl.ScenarioGroupeTypEnum.Trigger:
                     _toExecuteForCommand = () => _rootFrame.Navigate(typeof(CreateTriggerView));
+                    break;
+            }
+
+            switch (ScenarioGroupSubType)
+            {
+                case DomoItemControl.DomoItemType.Cooling:
+                    DomoItemsList = DataManager.AirConditionerDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Heating:
+                    DomoItemsList = DataManager.HeaterDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Lamp:
+                    DomoItemsList = DataManager.LampsDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Light:
+                    DomoItemsList = DataManager.LampsDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Safety:
+                    DomoItemsList = DataManager.SecurityDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Sensor:
+                    DomoItemsList = DataManager.SensorsDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.Temperature:
+                    DomoItemsList = DataManager.TemperatureDomoItemList;
+                    break;
+
+                case DomoItemControl.DomoItemType.WallSocket:
+                    DomoItemsList = DataManager.WallSocketDomoItemList;
                     break;
             }
         }
